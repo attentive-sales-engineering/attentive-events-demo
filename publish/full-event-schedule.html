@@ -1,0 +1,1064 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="description" content="">
+		<meta name="author" content="">
+
+		<title>myticket</title>
+
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/bootstrap-select.min.css">
+		<link rel="stylesheet" href="css/bootstrap-slider.min.css">
+		<link rel="stylesheet" href="css/jquery.scrolling-tabs.min.css">
+		<link rel="stylesheet" href="css/bootstrap-checkbox.css">
+		<link rel="stylesheet" href="css/flexslider.css">
+		<link rel="stylesheet" href="css/featherlight.min.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/bootstrap.offcanvas.min.css">
+		<link rel="stylesheet" href="css/core.css">
+	  
+
+		<!-- Custom styles for this template -->
+		<link rel="stylesheet" href="css/style.css" >
+		<link rel="stylesheet" href="css/responsive.css" >
+
+		<!--[if lt IE 9]>
+			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+			<script src="http://cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js"></script>
+			<script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<header id="masthead" class="site-header">
+			<div class="top-header top-header-bg">
+				<div class="container">
+					<div class="row">
+						<div class="top-left">
+							<ul>
+								<li>
+									<a href="#">
+										<i class="fa fa-phone"></i>
+										+62274 889767
+									</a>
+								</li>
+								<li>
+									<a href="mailto:hello@myticket.com"> 
+										<i class="fa fa-envelope-o"></i>
+										hello@myticket.com
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="top-right">
+							<ul>
+								<li>
+									<a href="#">Sign In</a>
+								</li>
+								<li>
+									<a href="#">Sign Up</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="main-header main-header-bg">
+				<div class="container">
+					<div class="row">
+						<div class="site-branding col-md-3">
+							<h1 class="site-title"><a href="#" title="myticket" rel="home"><img src="images/logo.png" alt="logo"></a></h1>
+						</div>
+
+						<div class="col-md-9">
+							<nav id="site-navigation" class="navbar">
+							  <!-- toggle get grouped for better mobile display -->
+								<div class="navbar-header">
+									<div class="mobile-cart" ><a href="#">0</a></div>
+									<button type="button" class="navbar-toggle offcanvas-toggle pull-right" data-toggle="offcanvas" data-target="#js-bootstrap-offcanvas">
+										<span class="sr-only">Toggle navigation</span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+									</button>
+								</div>
+
+								<div class="navbar-offcanvas navbar-offcanvas-touch navbar-offcanvas-right" id="js-bootstrap-offcanvas">
+									<button type="button" class="offcanvas-toggle closecanvas" data-toggle="offcanvas" data-target="#js-bootstrap-offcanvas">
+									   <i class="fa fa-times fa-2x" aria-hidden="true"></i>
+									</button>
+							
+									<ul class="nav navbar-nav navbar-right">
+										<li class="active"><a href="full-event-schedule.html">Schedule</a></li>
+										<li><a href="artist-page.html">Concerts</a></li>
+										<li><a href="upcoming-events.html">Sports</a></li>
+										<li><a href="order-ticket-without-seat.html">Parties</a></li>
+										<li><a href="event-by-category.html">Theater</a></li>
+										<li><a href="gallery.html">Gallery</a></li>
+										<li><a href="select-seat-2.html">Ticekts</a></li>
+										<li class="cart"><a href="#">0</a></li>
+									</ul>
+								</div>
+							</nav><!-- #site-navigation -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</header><!-- #masthead -->	
+	
+		<section class="section-page-header">
+			<div class="container">
+				<h1 class="entry-title">Full Events Schedules</h1>
+			</div>
+		</section>
+		
+		<section class="section-refine-search">
+			<div class="container">
+				<div class="row">
+					<form class="row">
+						<div class="keyword col-sm-6 col-md-4">
+							<label>Search Keyword</label>
+							<input type="text" class="form-control hasclear" placeholder="Search">
+							<span class="clearer"><img src="images/clear.png" alt="clear"></span>
+						</div>
+						<div class="month col-sm-6 col-md-3">
+							<label>Month</label>
+							<select class="selectpicker dropdown">
+								<option>Select Month</option>
+								<option>January</option>
+								<option>February</option>
+								<option>March</option>
+								<option>April</option>
+								<option>May</option>
+								<option>June</option>
+								<option>July</option>
+								<option>August</option>
+								<option>September</option>
+								<option>October</option>
+								<option>November</option>
+								<option>December</option>
+							</select>
+						</div>
+						<div class="year col-sm-6 col-md-3">
+							<label>Year</label>
+							<select class="selectpicker dropdown">
+								<option>Select Year</option>
+								<option value="2017">2016</option>
+								<option value="2017">2017</option>
+								<option value="2018">2018</option>
+								<option value="2019">2019</option>
+								<option value="2020">2020</option>
+								<option value="2021">2021</option>
+								<option value="2022">2022</option>
+								<option value="2023">2023</option>
+								<option value="2024">2024</option>
+								<option value="2025">2025</option>
+								<option value="2026">2026</option>
+							</select>
+						</div>
+						<div class="col-sm-6 col-md-2">
+							<input type="submit" value="Search">
+						</div>
+					</form>
+				</div>
+			</div>
+		</section>
+	
+		<section class="section-full-events-schedule">
+			<div class="container">
+				<div class="row">
+					<div class="section-header">
+						<ul class="nav nav-tabs event-tabs" role="tablist">
+							<li role="presentation" class="active">
+								<a href="#tab1" role="tab" data-toggle="tab">
+									<strong>Saturday</strong>
+									22 
+									<span>August 2016</span>
+								</a>
+							</li>
+							<li role="presentation">
+								<a href="#tab2" role="tab" data-toggle="tab">
+									<strong>Sunday</strong>
+									23 
+									<span>August 2016</span>
+								</a>
+							</li>
+							<li role="presentation">
+								<a href="#tab3" role="tab" data-toggle="tab">
+									<strong>Monday</strong>
+									24 
+									<span>August 2016</span>
+								</a>
+							</li>
+							<li role="presentation">
+								<a href="#tab4" role="tab" data-toggle="tab">
+									<strong>Tuesday</strong>
+									25 
+									<span>August 2016</span>
+								</a>
+							</li>
+							<li role="presentation">
+								<a href="#tab5" role="tab" data-toggle="tab">
+									<strong>Wednesday</strong>
+									26 
+									<span>August 2016</span>
+								</a>
+							</li>
+							<li role="presentation">
+								<a href="#tab6" role="tab" data-toggle="tab">
+									<strong>Thursday</strong>
+									27 
+									<span>August 2016</span>
+								</a>
+							</li>
+							<li role="presentation">
+								<a href="#tab7" role="tab" data-toggle="tab">
+									<strong>Friday</strong>
+									28 
+									<span>August 2016</span>
+								</a>
+							</li>
+							<li role="presentation">
+								<a href="#tab8" role="tab" data-toggle="tab">
+									<strong>Saturday</strong>
+									29 
+									<span>August 2016</span>
+								</a>
+							</li>
+							<li role="presentation">
+								<a href="#tab9" role="tab" data-toggle="tab">
+									<strong>Sunday</strong>
+									30 
+									<span>August 2016</span>
+								</a>
+							</li>
+							<li role="presentation">
+								<a href="#tab10" role="tab" data-toggle="tab">
+									<strong>Monday</strong>
+									31 
+									<span>August 2016</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="section-content">
+						<div class="tab-content">
+						    <div role="tabpanel" class="tab-pane active" id="tab1">
+								<div class="row">
+									<div class="col-sm-4 col-md-3">
+										<ul class="nav" role="tablist">
+											<li class="active">
+												<a href="#tab1-hr1" aria-controls="tab1-hr1" role="tab" data-toggle="tab">
+													<span class="schedule-time">08:00 <strong>AM</strong></span>
+													<span class="schedule-title">Kiai Kanjeng Orchestra</span>
+													<span class="schedule-ticket-info">18 tickets left</span>
+												</a>
+											</li>
+											<li>
+												<a href="#tab1-hr2" aria-controls="tab1-hr2" role="tab" data-toggle="tab">
+													<span class="schedule-time">09:00 <strong>AM</strong></span>
+													<span class="schedule-title">Envato Author Meetup</span>
+													<span class="schedule-ticket-info">20 tickets left</span>
+												</a>
+											</li>
+											<li>
+												<a href="#tab1-hr3" aria-controls="tab1-hr3" role="tab" data-toggle="tab">
+													<span class="schedule-time">10:00 <strong>AM</strong></span>
+													<span class="schedule-title">BMW Open Championship</span>
+													<span class="schedule-ticket-info">9 tickets left</span>
+												</a>
+											</li>
+											<li>
+												<a href="#tab1-hr4" aria-controls="tab1-hr4" role="tab" data-toggle="tab">
+													<span class="schedule-time">09:00 <strong>PM</strong></span>
+													<span class="schedule-title">UEFA CHAMPIONS LEAGUE</span>
+													<span class="schedule-ticket-info">13 tickets left</span>
+												</a>
+											</li>
+											<li>
+												<a href="#tab1-hr5" aria-controls="tab1-hr5" role="tab" data-toggle="tab">
+													<span class="schedule-time">10:00 <strong>PM</strong></span>
+													<span class="schedule-title">FORMULA 1 SEPANG</span>
+													<span class="schedule-ticket-info">13 tickets left</span>
+												</a>
+											</li>
+									  </ul>
+									</div>
+									<div class="col-sm-8 col-md-9">
+										<div class="tab-content">
+											<div role="tabpanel" class="tab-pane active" id="tab1-hr1">
+												<img src="images/full-event-schedule-img.jpg" alt="image">
+												<div class="full-event-info">
+													<div class="full-event-info-header">
+														<h2>Kiai Kanjeng Orchestra</h2>
+														<span class="ticket-left-info">18 Tickets Left</span>
+														<div class="clearfix"></div>
+														<span class="event-date-info">Saturday, August 22 2016 | 08:00 AM</span>
+														<span class="event-venue-info">220 Morrissey Blvd. Boston, MA 02125</span>
+													</div>
+													<div class="full-event-info-content">
+														<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+														<a class="book-ticket" href="#">Book Ticket</a>
+													</div>
+												</div>
+											</div>
+											<div role="tabpanel" class="tab-pane" id="tab1-hr2">
+												<img src="images/full-event-schedule-img.jpg" alt="image">
+												<div class="full-event-info">
+													<div class="full-event-info-header">
+														<h2>Envato Author Meetup in Boston</h2>
+														<span class="ticket-left-info">20 Tickets Left</span>
+														<div class="clearfix"></div>
+														<span class="event-date-info">Saturday, August 22 2016 | 09:00 AM</span>
+														<span class="event-venue-info">220 Morrissey Blvd. Boston, MA 02125</span>
+													</div>
+													<div class="full-event-info-content">
+														<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+														<a class="book-ticket" href="#">Book Ticket</a>
+													</div>
+												</div>
+											</div>
+											<div role="tabpanel" class="tab-pane" id="tab1-hr3">
+												<img src="images/full-event-schedule-img.jpg" alt="image">
+												<div class="full-event-info">
+													<div class="full-event-info-header">
+														<h2>BMW Open Championship</h2>
+														<span class="ticket-left-info">9 Tickets Left</span>
+														<div class="clearfix"></div>
+														<span class="event-date-info">Saturday, August 22 2016 | 10:00 AM</span>
+														<span class="event-venue-info">220 Morrissey Blvd. Boston, MA 02125</span>
+													</div>
+													<div class="full-event-info-content">
+														<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+														<a class="book-ticket" href="#">Book Ticket</a>
+													</div>
+												</div>
+											</div>
+											<div role="tabpanel" class="tab-pane" id="tab1-hr4">
+												<img src="images/full-event-schedule-img.jpg" alt="image">
+												<div class="full-event-info">
+													<div class="full-event-info-header">
+														<h2>UEFA CHAMPIONS LEAGUE</h2>
+														<span class="ticket-left-info">13 Tickets Left</span>
+														<div class="clearfix"></div>
+														<span class="event-date-info">Saturday, August 22 2016 | 09:00 PM</span>
+														<span class="event-venue-info">220 Morrissey Blvd. Boston, MA 02125</span>
+													</div>
+													<div class="full-event-info-content">
+														<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+														<a class="book-ticket" href="#">Book Ticket</a>
+													</div>
+												</div>
+											</div>
+											<div role="tabpanel" class="tab-pane" id="tab1-hr5">
+												<img src="images/full-event-schedule-img.jpg" alt="image">
+												<div class="full-event-info">
+													<div class="full-event-info-header">
+														<h2>FORMULA 1 SEPANG</h2>
+														<span class="ticket-left-info">13 Tickets Left</span>
+														<div class="clearfix"></div>
+														<span class="event-date-info">Saturday, August 22 2016 | 10:00 PM</span>
+														<span class="event-venue-info">220 Morrissey Blvd. Boston, MA 02125</span>
+													</div>
+													<div class="full-event-info-content">
+														<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+														<a class="book-ticket" href="#">Book Ticket</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>									
+								</div>
+							</div>
+							<div role="tabpanel" class="tab-pane" id="tab2">
+								<div class="row">
+									<div class="col-sm-4 col-md-3">
+										<ul class="nav" role="tablist">
+											<li class="active">
+												<a href="#tab2-hr1" aria-controls="tab2-hr1" role="tab" data-toggle="tab">
+													<span class="schedule-time">08:00 <strong>AM</strong></span>
+													<span class="schedule-title">Kiai Kanjeng Orchestra</span>
+													<span class="schedule-ticket-info">18 tickets left</span>
+												</a>
+											</li>
+											<li>
+												<a href="#tab2-hr2" aria-controls="tab2-hr2" role="tab" data-toggle="tab">
+													<span class="schedule-time">09:00 <strong>AM</strong></span>
+													<span class="schedule-title">Envato Author Meetup</span>
+													<span class="schedule-ticket-info">20 tickets left</span>
+												</a>
+											</li>
+											<li>
+												<a href="#tab2-hr3" aria-controls="tab2-hr2" role="tab" data-toggle="tab">
+													<span class="schedule-time">10:00 <strong>AM</strong></span>
+													<span class="schedule-title">BMW Open Championship</span>
+													<span class="schedule-ticket-info">9 tickets left</span>
+												</a>
+											</li>
+										</ul>
+									</div>
+									<div class="col-sm-8 col-md-9">
+										<div class="tab-content">
+											<div role="tabpanel" class="tab-pane active" id="tab2-hr1">
+												<img src="images/full-event-schedule-img.jpg" alt="image">
+												<div class="full-event-info">
+													<div class="full-event-info-header">
+														<h2>Kiai Kanjeng Orchestra</h2>
+														<span class="ticket-left-info">18 Tickets Left</span>
+														<div class="clearfix"></div>
+														<span class="event-date-info">Sunday, August 23 2016 | 08:00 AM</span>
+														<span class="event-venue-info">220 Morrissey Blvd. Boston, MA 02125</span>
+													</div>
+													<div class="full-event-info-content">
+														<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+														<a class="book-ticket" href="#">Book Ticket</a>
+													</div>
+												</div>
+											</div>
+											<div role="tabpanel" class="tab-pane" id="tab2-hr2">
+												<img src="images/full-event-schedule-img.jpg" alt="image">
+												<div class="full-event-info">
+													<div class="full-event-info-header">
+														<h2>Envato Author Meetup in Boston</h2>
+														<span class="ticket-left-info">20 Tickets Left</span>
+														<div class="clearfix"></div>
+														<span class="event-date-info">Sunday, August 23 2016 | 09:00 AM</span>
+														<span class="event-venue-info">220 Morrissey Blvd. Boston, MA 02125</span>
+													</div>
+													<div class="full-event-info-content">
+														<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+														<a class="book-ticket" href="#">Book Ticket</a>
+													</div>
+												</div>
+											</div>
+											<div role="tabpanel" class="tab-pane" id="tab2-hr3">
+												<img src="images/full-event-schedule-img.jpg" alt="image">
+												<div class="full-event-info">
+													<div class="full-event-info-header">
+														<h2>BMW Open Championship</h2>
+														<span class="ticket-left-info">9 Tickets Left</span>
+														<div class="clearfix"></div>
+														<span class="event-date-info">Sunday, August 23 2016 | 10:00 AM</span>
+														<span class="event-venue-info">220 Morrissey Blvd. Boston, MA 02125</span>
+													</div>
+													<div class="full-event-info-content">
+														<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+														<a class="book-ticket" href="#">Book Ticket</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>									
+								</div>
+							</div>
+							<div role="tabpanel" class="tab-pane" id="tab3">
+								<div class="row">
+									<div class="col-sm-4 col-md-3">
+										<ul class="nav" role="tablist">
+											<li class="active">
+												<a href="#tab3-hr1" aria-controls="tab3-hr1" role="tab" data-toggle="tab">
+													<span class="schedule-time">08:00 <strong>AM</strong></span>
+													<span class="schedule-title">Kiai Kanjeng Orchestra</span>
+													<span class="schedule-ticket-info">18 tickets left</span>
+												</a>
+											</li>
+											<li>
+												<a href="#tab3-hr2" aria-controls="tab3-hr2" role="tab" data-toggle="tab">
+													<span class="schedule-time">09:00 <strong>AM</strong></span>
+													<span class="schedule-title">Envato Author Meetup</span>
+													<span class="schedule-ticket-info">20 tickets left</span>
+												</a>
+											</li>
+											<li>
+												<a href="#tab3-hr3" aria-controls="tab3-hr3" role="tab" data-toggle="tab">
+													<span class="schedule-time">10:00 <strong>AM</strong></span>
+													<span class="schedule-title">BMW Open Championship</span>
+													<span class="schedule-ticket-info">9 tickets left</span>
+												</a>
+											</li>
+										</ul>
+									</div>
+									<div class="col-sm-8 col-md-9">
+										<div class="tab-content">
+											<div role="tabpanel" class="tab-pane active" id="tab3-hr1">
+												<img src="images/full-event-schedule-img.jpg" alt="image">
+												<div class="full-event-info">
+													<div class="full-event-info-header">
+														<h2>Kiai Kanjeng Orchestra</h2>
+														<span class="ticket-left-info">18 Tickets Left</span>
+														<div class="clearfix"></div>
+														<span class="event-date-info">Monday, August 24 2016 | 08:00 AM</span>
+														<span class="event-venue-info">220 Morrissey Blvd. Boston, MA 02125</span>
+													</div>
+													<div class="full-event-info-content">
+														<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+														<a class="book-ticket" href="#">Book Ticket</a>
+													</div>
+												</div>
+											</div>
+											<div role="tabpanel" class="tab-pane" id="tab3-hr2">
+												<img src="images/full-event-schedule-img.jpg" alt="image">
+												<div class="full-event-info">
+													<div class="full-event-info-header">
+														<h2>Envato Author Meetup in Boston</h2>
+														<span class="ticket-left-info">20 Tickets Left</span>
+														<div class="clearfix"></div>
+														<span class="event-date-info">Monday, August 24 2016 | 09:00 AM</span>
+														<span class="event-venue-info">220 Morrissey Blvd. Boston, MA 02125</span>
+													</div>
+													<div class="full-event-info-content">
+														<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+														<a class="book-ticket" href="#">Book Ticket</a>
+													</div>
+												</div>
+											</div>
+											<div role="tabpanel" class="tab-pane" id="tab3-hr3">
+												<img src="images/full-event-schedule-img.jpg" alt="image">
+												<div class="full-event-info">
+													<div class="full-event-info-header">
+														<h2>BMW Open Championship</h2>
+														<span class="ticket-left-info">9 Tickets Left</span>
+														<div class="clearfix"></div>
+														<span class="event-date-info">Monday, August 24 2016 | 10:00 AM</span>
+														<span class="event-venue-info">220 Morrissey Blvd. Boston, MA 02125</span>
+													</div>
+													<div class="full-event-info-content">
+														<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+														<a class="book-ticket" href="#">Book Ticket</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>									
+								</div>
+							</div>
+							<div role="tabpanel" class="tab-pane" id="tab4">
+								<div class="row">
+									<div class="col-sm-4 col-md-3">
+										<ul class="nav" role="tablist">
+											<li class="active">
+												<a href="#tab4-hr1" aria-controls="tab4-hr1" role="tab" data-toggle="tab">
+													<span class="schedule-time">08:00 <strong>AM</strong></span>
+													<span class="schedule-title">Kiai Kanjeng Orchestra</span>
+													<span class="schedule-ticket-info">18 tickets left</span>
+												</a>
+											</li>
+											<li>
+												<a href="#tab4-hr2" aria-controls="tab4-hr2" role="tab" data-toggle="tab">
+													<span class="schedule-time">09:00 <strong>AM</strong></span>
+													<span class="schedule-title">Envato Author Meetup</span>
+													<span class="schedule-ticket-info">20 tickets left</span>
+												</a>
+											</li>
+										</ul>
+									</div>
+									<div class="col-sm-8 col-md-9">
+										<div class="tab-content">
+											<div role="tabpanel" class="tab-pane active" id="tab4-hr1">
+												<img src="images/full-event-schedule-img.jpg" alt="image">
+												<div class="full-event-info">
+													<div class="full-event-info-header">
+														<h2>Kiai Kanjeng Orchestra</h2>
+														<span class="ticket-left-info">18 Tickets Left</span>
+														<div class="clearfix"></div>
+														<span class="event-date-info">Tuesday, August 25 2016 | 08:00 AM</span>
+														<span class="event-venue-info">220 Morrissey Blvd. Boston, MA 02125</span>
+													</div>
+													<div class="full-event-info-content">
+														<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+														<a class="book-ticket" href="#">Book Ticket</a>
+													</div>
+												</div>
+											</div>
+											<div role="tabpanel" class="tab-pane" id="tab4-hr2">
+												<img src="images/full-event-schedule-img.jpg" alt="image">
+												<div class="full-event-info">
+													<div class="full-event-info-header">
+														<h2>Envato Author Meetup in Boston</h2>
+														<span class="ticket-left-info">20 Tickets Left</span>
+														<div class="clearfix"></div>
+														<span class="event-date-info">Tuesday, August 25 2016 | 09:00 AM</span>
+														<span class="event-venue-info">220 Morrissey Blvd. Boston, MA 02125</span>
+													</div>
+													<div class="full-event-info-content">
+														<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+														<a class="book-ticket" href="#">Book Ticket</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>									
+								</div>
+							</div>
+							<div role="tabpanel" class="tab-pane" id="tab5">
+								<div class="row">
+									<div class="col-sm-4 col-md-3">
+										<ul class="nav" role="tablist">
+											<li class="active">
+												<a href="#tab5-hr1" aria-controls="tab5-hr1" role="tab" data-toggle="tab">
+													<span class="schedule-time">08:00 <strong>AM</strong></span>
+													<span class="schedule-title">Kiai Kanjeng Orchestra</span>
+													<span class="schedule-ticket-info">18 tickets left</span>
+												</a>
+											</li>
+											<li>
+												<a href="#tab5-hr2" aria-controls="tab5-hr2" role="tab" data-toggle="tab">
+													<span class="schedule-time">09:00 <strong>AM</strong></span>
+													<span class="schedule-title">Envato Author Meetup</span>
+													<span class="schedule-ticket-info">20 tickets left</span>
+												</a>
+											</li>
+										</ul>
+									</div>
+									<div class="col-sm-8 col-md-9">
+										<div class="tab-content">
+											<div role="tabpanel" class="tab-pane active" id="tab5-hr1">
+												<img src="images/full-event-schedule-img.jpg" alt="image">
+												<div class="full-event-info">
+													<div class="full-event-info-header">
+														<h2>Kiai Kanjeng Orchestra</h2>
+														<span class="ticket-left-info">18 Tickets Left</span>
+														<div class="clearfix"></div>
+														<span class="event-date-info">Wednesday, August 26 2016 | 08:00 AM</span>
+														<span class="event-venue-info">220 Morrissey Blvd. Boston, MA 02125</span>
+													</div>
+													<div class="full-event-info-content">
+														<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+														<a class="book-ticket" href="#">Book Ticket</a>
+													</div>
+												</div>
+											</div>
+											<div role="tabpanel" class="tab-pane" id="tab5-hr2">
+												<img src="images/full-event-schedule-img.jpg" alt="image">
+												<div class="full-event-info">
+													<div class="full-event-info-header">
+														<h2>Envato Author Meetup in Boston</h2>
+														<span class="ticket-left-info">20 Tickets Left</span>
+														<div class="clearfix"></div>
+														<span class="event-date-info">Wednesday, August 26 2016 | 09:00 AM</span>
+														<span class="event-venue-info">220 Morrissey Blvd. Boston, MA 02125</span>
+													</div>
+													<div class="full-event-info-content">
+														<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+														<a class="book-ticket" href="#">Book Ticket</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>									
+								</div>
+							</div>
+							<div role="tabpanel" class="tab-pane" id="tab6">
+								<div class="row">
+									<div class="col-sm-4 col-md-3">
+										<ul class="nav" role="tablist">
+											<li class="active">
+												<a href="#tab6-hr1" aria-controls="tab6-hr1" role="tab" data-toggle="tab">
+													<span class="schedule-time">08:00 <strong>AM</strong></span>
+													<span class="schedule-title">Kiai Kanjeng Orchestra</span>
+													<span class="schedule-ticket-info">18 tickets left</span>
+												</a>
+											</li>
+											<li>
+												<a href="#tab6-hr2" aria-controls="tab6-hr2" role="tab" data-toggle="tab">
+													<span class="schedule-time">09:00 <strong>AM</strong></span>
+													<span class="schedule-title">Envato Author Meetup</span>
+													<span class="schedule-ticket-info">20 tickets left</span>
+												</a>
+											</li>
+										</ul>
+									</div>
+									<div class="col-sm-8 col-md-9">
+										<div class="tab-content">
+											<div role="tabpanel" class="tab-pane active" id="tab6-hr1">
+												<img src="images/full-event-schedule-img.jpg" alt="image">
+												<div class="full-event-info">
+													<div class="full-event-info-header">
+														<h2>Kiai Kanjeng Orchestra</h2>
+														<span class="ticket-left-info">18 Tickets Left</span>
+														<div class="clearfix"></div>
+														<span class="event-date-info">Thursday, August 27 2016 | 08:00 AM</span>
+														<span class="event-venue-info">220 Morrissey Blvd. Boston, MA 02125</span>
+													</div>
+													<div class="full-event-info-content">
+														<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+														<a class="book-ticket" href="#">Book Ticket</a>
+													</div>
+												</div>
+											</div>
+											<div role="tabpanel" class="tab-pane" id="tab6-hr2">
+												<img src="images/full-event-schedule-img.jpg" alt="image">
+												<div class="full-event-info">
+													<div class="full-event-info-header">
+														<h2>Envato Author Meetup in Boston</h2>
+														<span class="ticket-left-info">20 Tickets Left</span>
+														<div class="clearfix"></div>
+														<span class="event-date-info">Thursday, August 27 2016 | 09:00 AM</span>
+														<span class="event-venue-info">220 Morrissey Blvd. Boston, MA 02125</span>
+													</div>
+													<div class="full-event-info-content">
+														<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+														<a class="book-ticket" href="#">Book Ticket</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>									
+								</div>
+							</div>
+							<div role="tabpanel" class="tab-pane" id="tab7">
+								<div class="row">
+									<div class="col-sm-4 col-md-3">
+										<ul class="nav" role="tablist">
+											<li class="active">
+												<a href="#tab7-hr1" aria-controls="tab7-hr1" role="tab" data-toggle="tab">
+													<span class="schedule-time">08:00 <strong>AM</strong></span>
+													<span class="schedule-title">Kiai Kanjeng Orchestra</span>
+													<span class="schedule-ticket-info">18 tickets left</span>
+												</a>
+											</li>
+											<li>
+												<a href="#tab7-hr2" aria-controls="tab7-hr2" role="tab" data-toggle="tab">
+													<span class="schedule-time">09:00 <strong>AM</strong></span>
+													<span class="schedule-title">Envato Author Meetup</span>
+													<span class="schedule-ticket-info">20 tickets left</span>
+												</a>
+											</li>
+										</ul>
+									</div>
+									<div class="col-sm-8 col-md-9">
+										<div class="tab-content">
+											<div role="tabpanel" class="tab-pane active" id="tab7-hr1">
+												<img src="images/full-event-schedule-img.jpg" alt="image">
+												<div class="full-event-info">
+													<div class="full-event-info-header">
+														<h2>Kiai Kanjeng Orchestra</h2>
+														<span class="ticket-left-info">18 Tickets Left</span>
+														<div class="clearfix"></div>
+														<span class="event-date-info">Friday, August 28 2016 | 08:00 AM</span>
+														<span class="event-venue-info">220 Morrissey Blvd. Boston, MA 02125</span>
+													</div>
+													<div class="full-event-info-content">
+														<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+														<a class="book-ticket" href="#">Book Ticket</a>
+													</div>
+												</div>
+											</div>
+											<div role="tabpanel" class="tab-pane" id="tab7-hr2">
+												<img src="images/full-event-schedule-img.jpg" alt="image">
+												<div class="full-event-info">
+													<div class="full-event-info-header">
+														<h2>Envato Author Meetup in Boston</h2>
+														<span class="ticket-left-info">20 Tickets Left</span>
+														<div class="clearfix"></div>
+														<span class="event-date-info">Friday, August 28 2016 | 09:00 AM</span>
+														<span class="event-venue-info">220 Morrissey Blvd. Boston, MA 02125</span>
+													</div>
+													<div class="full-event-info-content">
+														<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+														<a class="book-ticket" href="#">Book Ticket</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>									
+								</div>
+							</div>
+							<div role="tabpanel" class="tab-pane" id="tab8">
+								<div class="row">
+									<div class="col-sm-4 col-md-3">
+										<ul class="nav" role="tablist">
+											<li class="active">
+												<a href="#tab8-hr1" aria-controls="tab8-hr1" role="tab" data-toggle="tab">
+													<span class="schedule-time">08:00 <strong>AM</strong></span>
+													<span class="schedule-title">Kiai Kanjeng Orchestra</span>
+													<span class="schedule-ticket-info">18 tickets left</span>
+												</a>
+											</li>
+											<li>
+												<a href="#tab8-hr2" aria-controls="tab8-hr2" role="tab" data-toggle="tab">
+													<span class="schedule-time">09:00 <strong>AM</strong></span>
+													<span class="schedule-title">Envato Author Meetup</span>
+													<span class="schedule-ticket-info">20 tickets left</span>
+												</a>
+											</li>
+										</ul>
+									</div>
+									<div class="col-sm-8 col-md-9">
+										<div class="tab-content">
+											<div role="tabpanel" class="tab-pane active" id="tab8-hr1">
+												<img src="images/full-event-schedule-img.jpg" alt="image">
+												<div class="full-event-info">
+													<div class="full-event-info-header">
+														<h2>Kiai Kanjeng Orchestra</h2>
+														<span class="ticket-left-info">18 Tickets Left</span>
+														<div class="clearfix"></div>
+														<span class="event-date-info">Saturday, August 29 2016 | 08:00 AM</span>
+														<span class="event-venue-info">220 Morrissey Blvd. Boston, MA 02125</span>
+													</div>
+													<div class="full-event-info-content">
+														<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+														<a class="book-ticket" href="#">Book Ticket</a>
+													</div>
+												</div>
+											</div>
+											<div role="tabpanel" class="tab-pane" id="tab8-hr2">
+												<img src="images/full-event-schedule-img.jpg" alt="image">
+												<div class="full-event-info">
+													<div class="full-event-info-header">
+														<h2>Envato Author Meetup in Boston</h2>
+														<span class="ticket-left-info">20 Tickets Left</span>
+														<div class="clearfix"></div>
+														<span class="event-date-info">Saturday, August 29 2016 | 09:00 AM</span>
+														<span class="event-venue-info">220 Morrissey Blvd. Boston, MA 02125</span>
+													</div>
+													<div class="full-event-info-content">
+														<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+														<a class="book-ticket" href="#">Book Ticket</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>									
+								</div>
+							</div>
+							<div role="tabpanel" class="tab-pane" id="tab9">
+								<div class="row">
+									<div class="col-sm-4 col-md-3">
+										<ul class="nav" role="tablist">
+											<li class="active">
+												<a href="#tab9-hr1" aria-controls="tab9-hr1" role="tab" data-toggle="tab">
+													<span class="schedule-time">08:00 <strong>AM</strong></span>
+													<span class="schedule-title">Kiai Kanjeng Orchestra</span>
+													<span class="schedule-ticket-info">18 tickets left</span>
+												</a>
+											</li>
+											<li>
+												<a href="#tab9-hr2" aria-controls="tab9-hr2" role="tab" data-toggle="tab">
+													<span class="schedule-time">09:00 <strong>AM</strong></span>
+													<span class="schedule-title">Envato Author Meetup</span>
+													<span class="schedule-ticket-info">20 tickets left</span>
+												</a>
+											</li>
+										</ul>
+									</div>
+									<div class="col-sm-8 col-md-9">
+										<div class="tab-content">
+											<div role="tabpanel" class="tab-pane active" id="tab9-hr1">
+												<img src="images/full-event-schedule-img.jpg" alt="image">
+												<div class="full-event-info">
+													<div class="full-event-info-header">
+														<h2>Kiai Kanjeng Orchestra</h2>
+														<span class="ticket-left-info">18 Tickets Left</span>
+														<div class="clearfix"></div>
+														<span class="event-date-info">Sunday, August 30 2016 | 08:00 AM</span>
+														<span class="event-venue-info">220 Morrissey Blvd. Boston, MA 02125</span>
+													</div>
+													<div class="full-event-info-content">
+														<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+														<a class="book-ticket" href="#">Book Ticket</a>
+													</div>
+												</div>
+											</div>
+											<div role="tabpanel" class="tab-pane" id="tab9-hr2">
+												<img src="images/full-event-schedule-img.jpg" alt="image">
+												<div class="full-event-info">
+													<div class="full-event-info-header">
+														<h2>Envato Author Meetup in Boston</h2>
+														<span class="ticket-left-info">20 Tickets Left</span>
+														<div class="clearfix"></div>
+														<span class="event-date-info">Sunday, August 30 2016 | 09:00 AM</span>
+														<span class="event-venue-info">220 Morrissey Blvd. Boston, MA 02125</span>
+													</div>
+													<div class="full-event-info-content">
+														<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+														<a class="book-ticket" href="#">Book Ticket</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>									
+								</div>
+							</div>
+							<div role="tabpanel" class="tab-pane" id="tab10">
+								<div class="row">
+									<div class="col-sm-4 col-md-3">
+										<ul class="nav" role="tablist">
+											<li class="active">
+												<a href="#tab10-hr1" aria-controls="tab10-hr1" role="tab" data-toggle="tab">
+													<span class="schedule-time">08:00 <strong>AM</strong></span>
+													<span class="schedule-title">Kiai Kanjeng Orchestra</span>
+													<span class="schedule-ticket-info">18 tickets left</span>
+												</a>
+											</li>
+											<li>
+												<a href="#tab10-hr2" aria-controls="tab10-hr2" role="tab" data-toggle="tab">
+													<span class="schedule-time">09:00 <strong>AM</strong></span>
+													<span class="schedule-title">Envato Author Meetup</span>
+													<span class="schedule-ticket-info">20 tickets left</span>
+												</a>
+											</li>
+										</ul>
+									</div>
+									<div class="col-sm-8 col-md-9">
+										<div class="tab-content">
+											<div role="tabpanel" class="tab-pane active" id="tab10-hr1">
+												<img src="images/full-event-schedule-img.jpg" alt="image">
+												<div class="full-event-info">
+													<div class="full-event-info-header">
+														<h2>Kiai Kanjeng Orchestra</h2>
+														<span class="ticket-left-info">18 Tickets Left</span>
+														<div class="clearfix"></div>
+														<span class="event-date-info">Monday, August 31 2016 | 08:00 AM</span>
+														<span class="event-venue-info">220 Morrissey Blvd. Boston, MA 02125</span>
+													</div>
+													<div class="full-event-info-content">
+														<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+														<a class="book-ticket" href="#">Book Ticket</a>
+													</div>
+												</div>
+											</div>
+											<div role="tabpanel" class="tab-pane" id="tab10-hr2">
+												<img src="images/full-event-schedule-img.jpg" alt="image">
+												<div class="full-event-info">
+													<div class="full-event-info-header">
+														<h2>Envato Author Meetup in Boston</h2>
+														<span class="ticket-left-info">20 Tickets Left</span>
+														<div class="clearfix"></div>
+														<span class="event-date-info">Monday, August 31 2016 | 09:00 AM</span>
+														<span class="event-venue-info">220 Morrissey Blvd. Boston, MA 02125</span>
+													</div>
+													<div class="full-event-info-content">
+														<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+														<a class="book-ticket" href="#">Book Ticket</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>									
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+
+		<footer id="colophon" class="site-footer">
+			<div class="top-footer">
+				<div class="container">
+					<div class="row">
+						
+						<div class="col-md-8">
+							<a href="#"><img src="images/logo.png" alt="logo"></a>
+						</div>
+						<div class="col-md-4">
+						
+						<p>&copy; 2016 MYTICKET.COM. ALL RIGHTS RESEVED</p>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			<div class="main-footer">
+				<div class="container">
+					<div class="row">
+					  <div class="footer-1 col-md-9">
+						<div class="about clearfix">
+							<h3>About</h3>
+							<ul>
+								<li><a href="#">Our Company</a></li>
+								<li><a href="#">Careers</a></li>
+								<li><a href="#">Advertising</a></li>
+								<li><a href="#">Press Room</a></li>
+								<li><a href="#">Trademarks</a></li>
+								<li><a href="#">Terms of Service</a></li>
+								<li><a href="#">Privacy Policy</a></li>
+							</ul>
+						  </div>
+						  
+						  <div class="support clearfix">
+							<h3>Support and Contact</h3>
+							<ul>
+								<li><a href="#">Customer Support Contacts</a></li>
+								<li><a href="#">Feedback</a></li>
+								<li><a href="#">Help</a></li>
+								<li><a href="#">Sitemap</a></li>
+							</ul>
+						  </div>
+						  
+						  <div class="social clearfix">
+							<h3>Stay Connected</h3>
+							<ul>
+								<li class="facebook">
+									<a href="#">
+										<i class="fa fa-facebook" aria-hidden="true"></i>
+										Facebook
+									</a>
+								</li>
+								<li class="twitter">
+									<a href="#">
+										<i class="fa fa-twitter" aria-hidden="true"></i>
+										Twitter
+									</a>
+								</li>
+								<li class="linkedin">
+									<a href="#">
+										<i class="fa fa-linkedin-square" aria-hidden="true"></i>
+										LinkedIn
+									</a>
+								</li>
+								<li class="google">
+									<a href="#">
+										<i class="fa fa-google-plus-square" aria-hidden="true"></i>
+										Google+
+									</a>
+								</li>
+								<li class="rss">
+									<a href="#">
+										<i class="fa fa-rss-square" aria-hidden="true"></i>
+										RSS
+									</a>
+								</li>
+							</ul>
+						  </div>
+						</div>
+
+					  <div class="footer-2 col-md-3">
+						 <div class="footer-dashboard">
+							<h3>MyTicket Dashboard</h3>
+							<ul>
+								<li><a href="#">Professional</a></li>
+								<li><a href="#">Subscriber Login</a></li>
+							</ul>
+						  </div>
+					  </div>
+
+					</div>
+				</div>
+			</div>
+		</footer><!-- #colophon -->
+
+		<script src="js/jquery-3.2.0.min.js"></script>
+		<script src="js/bootstrap-slider.min.js"></script>
+		<script src="js/bootstrap-select.min.js"></script>
+		<script src="js/jquery.scrolling-tabs.min.js"></script>
+		<script src="js/jquery.countdown.min.js"></script>
+		<script src="js/jquery.flexslider-min.js"></script>
+		<script src="js/jquery.imagemapster.min.js"></script>
+		<script src="js/tooltip.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/featherlight.min.js"></script>
+		<script src="js/featherlight.gallery.min.js"></script>
+		<script src="js/bootstrap.offcanvas.min.js"></script>
+		<script src="js/main.js"></script>
+
+	</body>
+</html>

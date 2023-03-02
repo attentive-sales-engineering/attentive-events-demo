@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="description" content="">
+		<meta name="author" content="">
+
+		<title>myticket</title>
+
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/bootstrap-select.min.css">
+		<link rel="stylesheet" href="css/bootstrap-slider.min.css">
+		<link rel="stylesheet" href="css/jquery.scrolling-tabs.min.css">
+		<link rel="stylesheet" href="css/bootstrap-checkbox.css">
+		<link rel="stylesheet" href="css/flexslider.css">
+		<link rel="stylesheet" href="css/featherlight.min.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/bootstrap.offcanvas.min.css">
+		<link rel="stylesheet" href="css/core.css">
+	  
+
+		<!-- Custom styles for this template -->
+		<link rel="stylesheet" href="css/style.css" >
+		<link rel="stylesheet" href="css/responsive.css" >
+
+		<!--[if lt IE 9]>
+			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+			<script src="http://cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js"></script>
+			<script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+	
+		<header id="masthead" class="site-header">
+			<div class="top-header top-header-bg">
+				<div class="container">
+					<div class="row">
+						<div class="top-left">
+							<ul>
+								<li>
+									<a href="#">
+										<i class="fa fa-phone"></i>
+										+62274 889767
+									</a>
+								</li>
+								<li>
+									<a href="mailto:hello@myticket.com"> 
+										<i class="fa fa-envelope-o"></i>
+										hello@myticket.com
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="top-right">
+							<ul>
+								<li>
+									<a href="#">Sign In</a>
+								</li>
+								<li>
+									<a href="#">Sign Up</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="main-header main-header-bg">
+				<div class="container">
+					<div class="row">
+						<div class="site-branding col-md-3">
+							<h1 class="site-title"><a href="#home" title="myticket" rel="home"><img src="images/logo.png" alt="logo"></a></h1>
+						</div>
+
+						<div class="col-md-9">
+							<nav id="site-navigation" class="navbar">
+							  <!-- toggle get grouped for better mobile display -->
+								<div class="navbar-header">
+									<div class="mobile-cart" ><a href="#">0</a></div>
+									<button type="button" class="navbar-toggle offcanvas-toggle pull-right" data-toggle="offcanvas" data-target="#js-bootstrap-offcanvas">
+										<span class="sr-only">Toggle navigation</span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+									</button>
+								</div>
+
+								<div class="navbar-offcanvas navbar-offcanvas-touch navbar-offcanvas-right" id="js-bootstrap-offcanvas">
+									<button type="button" class="offcanvas-toggle closecanvas" data-toggle="offcanvas" data-target="#js-bootstrap-offcanvas">
+									   <i class="fa fa-times fa-2x" aria-hidden="true"></i>
+									</button>
+							
+									<ul class="nav navbar-nav navbar-right">
+										<li class="active"><a href="full-event-schedule.html">Schedule</a></li>
+										<li><a href="artist-page.html">Concerts</a></li>
+										<li><a href="upcoming-events.html">Sports</a></li>
+										<li><a href="order-ticket-without-seat.html">Parties</a></li>
+										<li><a href="event-by-category.html">Theater</a></li>
+										<li><a href="gallery.html">Gallery</a></li>
+										<li><a href="select-seat-2.html">Ticekts</a></li>
+										<li class="cart"><a href="#">0</a></li>
+									</ul>
+								</div>
+							</nav><!-- #site-navigation -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</header><!-- #masthead -->	
+	
+		<section class="section-refine-search">
+			<div class="container">
+				<div class="row">
+					<form>
+						<div class="keyword col-sm-6 col-md-4">
+							<label>Search Keyword</label>
+							<input type="text" class="form-control hasclear" placeholder="Search">
+							<span class="clearer"><img src="images/clear.png" alt="image"></span>
+						</div>
+						<div class="location col-sm-6 col-md-3">
+							<label>Location</label>
+							<select class="selectpicker dropdown">
+							  <option>Select Location</option>
+							  <option>San Francisco</option>
+							  <option>Foxborough </option>
+							  <option>Buffalo</option>
+							  <option>Auburn Hills</option>
+							</select>
+						</div>
+						<div class="event-date col-sm-6 col-md-3">
+							<label>Event Date</label>
+							<select class="selectpicker dropdown">
+							  <option>Select Date</option>
+							  <option>August 1st, 2016</option>
+							  <option>August 2nd, 2016</option>
+							  <option>August 3rd, 2016</option>
+							  <option>August 4th, 2016</option>
+							</select>
+						</div>
+						<div class="col-sm-6 col-md-2">
+							<input type="submit" value="Search">
+						</div>
+					</form>
+				</div>
+			</div>
+		</section>
+	
+		<section class="section-search-content">
+			<div class="container">
+				<div class="row">
+					<div id="secondary" class="col-md-4 col-lg-3">
+						<div class="search-filter">
+							<div class="search-event-title">
+								<h2><span>Event</span> COLDPLAY CONCERT</h2>
+							</div>
+							<div class="search-filter-delivery">
+								<h3>Delivery</h3>
+								<div class="checkbox">
+									<input id="delivery1" class="styled" type="checkbox" checked="">
+									<label for="delivery1">
+										All
+									</label>
+								</div>
+								<div class="checkbox">
+									<input id="delivery2" class="styled" type="checkbox">
+									<label for="delivery2">
+										Electronic
+									</label>
+								</div>
+								<div class="checkbox">
+									<input id="delivery3" class="styled" type="checkbox">
+									<label for="delivery3">
+										Instant
+									</label>
+								</div>
+							</div>
+							<div class="search-filter-seat-features">
+								<h3>Seat Features</h3>
+								<div class="checkbox">
+									<input id="features1" class="styled" type="checkbox" checked="">
+									<label for="features1">
+										All
+									</label>
+								</div>
+								<div class="checkbox">
+									<input id="features2" class="styled" type="checkbox">
+									<label for="features2">
+										Aisle
+									</label>
+								</div>
+								<div class="checkbox">
+									<input id="features3" class="styled" type="checkbox">
+									<label for="features3">
+										Ex-Obstucted View
+									</label>
+								</div>
+								<div class="checkbox">
+									<input id="features4" class="styled" type="checkbox">
+									<label for="features4">
+										Parking Pass Included
+									</label>
+								</div>
+								<div class="checkbox">
+									<input id="features5" class="styled" type="checkbox">
+									<label for="features5">
+										Wheelchair Accessible
+									</label>
+								</div>
+							</div>
+							<div class="search-filter-price">
+								<h3>Price</h3>
+								<input id="price-range" type="text" class="span2" value="" data-slider-min="10" data-slider-max="200" data-slider-step="5" data-slider-value="[50,150]"/>
+							</div>
+						</div>
+					</div>
+					
+					<div id="primary" class="col-md-8 col-lg-9">
+					
+						<div class="search-result-header">
+							<div class="row">
+								<div class="col-sm-7">
+									<h2>Coldplay Concert at San Francisco</h2>
+									<span>Showing 1-10 of 32 Results</span>
+								</div>
+								<div class="col-sm-5">
+									<label>Sort By</label>
+									<select class="selectpicker dropdown">
+									  <option>Price: Low-High</option>
+									  <option>Price: High-Low</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						
+						<div class="search-result-item">
+							<div class="row">
+								<div class="search-result-item-info col-sm-9">
+									<h3>Coldplay Concert Tickets</h3>
+									<ul class="row">
+										<li class="col-sm-5 col-lg-6">
+											<span>Venue</span>
+											Gillette Stadium (Foxborough, MA)
+										</li>
+										<li class="col-sm-4 col-lg-3">
+											<span>Saturday</span>
+											July. 30th, 2016
+										</li>
+										<li class="col-sm-3">
+											<span>Time</span>
+											07:00 PM
+										</li>
+									</ul>
+								</div>
+								<div class="search-result-item-price col-sm-3">
+									<span>Price From</span>
+									<strong>$101</strong>
+									<a href="#">Book Now</a>
+								</div>
+							</div>
+						</div>
+						<div class="search-result-item sold-out">
+							<div class="row">
+								<div class="search-result-item-info col-sm-9">
+									<h3>Coldplay Concert Tickets</h3>
+									<ul class="row">
+										<li class="col-sm-5 col-lg-6">
+											<span>Venue</span>
+											First Niagara Center (Buffalo, NY)
+										</li>
+										<li class="col-sm-4 col-lg-3">
+											<span>Saturday</span>
+											August. 1st, 2016 
+										</li>
+										<li class="col-sm-3">
+											<span>Time</span>
+											07:00 PM
+										</li>
+									</ul>
+								</div>
+								<div class="search-result-item-price col-sm-3">
+									<span>Price From</span>
+									<strong>$113</strong>
+									<a href="#">Sold Out</a>
+								</div>
+							</div>
+						</div>
+						<div class="search-result-item sale">
+							<div class="ribbon"><span>Sale</span></div>
+							<div class="row">
+								<div class="search-result-item-info col-sm-9">
+									<h3>Coldplay Concert Tickets</h3>
+									<ul class="row">
+										<li class="col-sm-5 col-lg-6">
+											<span>Venue</span>
+											Palace Of Auburn Hills (Auburn Hills, MI)
+										</li>
+										<li class="col-sm-4 col-lg-3">
+											<span>Saturday</span>
+											August. 3rd, 2016 
+										</li>
+										<li class="col-sm-3">
+											<span>Time</span>
+											07:00 PM
+										</li>
+									</ul>
+								</div>
+								<div class="search-result-item-price col-sm-3">
+									<span>Price From</span>
+									<strong><span>$140</span>$125</strong>
+									<a href="#" class="sold-out">Book Now</a>
+								</div>
+							</div>
+						</div>
+						<div class="search-result-item">
+							<div class="row">
+								<div class="search-result-item-info col-sm-9">
+									<h3>Coldplay Concert Tickets</h3>
+									<ul class="row">
+										<li class="col-sm-5 col-lg-6">
+											<span>Venue</span>
+											First Niagara Center (Buffalo, NY)
+										</li>
+										<li class="col-sm-4 col-lg-3">
+											<span>Saturday</span>
+											August. 1st, 2016 
+										</li>
+										<li class="col-sm-3">
+											<span>Time</span>
+											07:00 PM
+										</li>
+									</ul>
+								</div>
+								<div class="search-result-item-price col-sm-3">
+									<span>Price From</span>
+									<strong>$140</strong>
+									<a href="#">Book Now</a>
+								</div>
+							</div>
+						</div>
+						<div class="search-result-item">
+							<div class="row">
+								<div class="search-result-item-info col-sm-9">
+									<h3>Coldplay Concert Tickets</h3>
+									<ul class="row">
+										<li class="col-sm-5 col-lg-6">
+											<span>Venue</span>
+											CONSOL Energy Center (Pittsburgh, PA)
+										</li>
+										<li class="col-sm-4 col-lg-3">
+											<span>Saturday</span>
+											August. 5th, 2016 
+										</li>
+										<li class="col-sm-3">
+											<span>Time</span>
+											07:00 PM
+										</li>
+									</ul>
+								</div>
+								<div class="search-result-item-price col-sm-3">
+									<span>Price From</span>
+									<strong>$155</strong>
+									<a href="#">Book Now</a>
+								</div>
+							</div>
+						</div>
+						<div class="search-result-item sold-out">
+							<div class="row">
+								<div class="search-result-item-info col-sm-9">
+									<h3>Coldplay Concert Tickets</h3>
+									<ul class="row">
+										<li class="col-sm-5 col-lg-6">
+											<span>Venue</span>
+											Lincoln Financial Field (Philadelphia, PA)
+										</li>
+										<li class="col-sm-4 col-lg-3">
+											<span>Saturday</span>
+											August. 6th, 2016 
+										</li>
+										<li class="col-sm-3">
+											<span>Time</span>
+											07:00 PM
+										</li>
+									</ul>
+								</div>
+								<div class="search-result-item-price col-sm-3">
+									<span>Price From</span>
+									<strong>$160</strong>
+									<a href="#">Sold Out</a>
+								</div>
+							</div>
+						</div>
+						<div class="search-result-item">
+							<div class="row">
+								<div class="search-result-item-info col-sm-9">
+									<h3>Coldplay Concert Tickets</h3>
+									<ul class="row">
+										<li class="col-sm-5 col-lg-6"> 
+											<span>Venue</span>
+											Rose Bowl (Pasadena, CA)
+										</li>
+										<li class="col-sm-4 col-lg-3">
+											<span>Saturday</span>
+											August. 20th, 2016 
+										</li>
+										<li class="col-sm-3">
+											<span>Time</span>
+											07:00 PM
+										</li>
+									</ul>
+								</div>
+								<div class="search-result-item-price col-sm-3">
+									<span>Price From</span>
+									<strong>$175</strong>
+									<a href="#">Book Now</a>
+								</div>
+							</div>
+						</div>
+						
+						<div class="search-result-footer">
+							<ul class="pagination">
+								<li>
+									<a href="#" aria-label="Previous">
+										<span aria-hidden="true"><i class="fa fa-long-arrow-left" aria-hidden="true"></i> Previous</span>
+									</a>
+								</li>
+								<li><a href="#">1</a></li>
+								<li><a href="#">2</a></li>
+								<li class="active"><a href="#">3</a></li>
+								<li><a href="#">4</a></li>
+								<li><a href="#">5</a></li>
+								<li>
+									<a href="#" aria-label="Next">
+										<span aria-hidden="true">Next <i class="fa fa-long-arrow-right" aria-hidden="true"></i></span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer id="colophon" class="site-footer">
+			<div class="top-footer">
+				<div class="container">
+					<div class="row">
+						
+						<div class="col-md-8">
+							<a href="#"><img src="images/logo.png" alt="logo"></a>
+						</div>
+						<div class="col-md-4">
+						
+						<p>&copy; 2016 MYTICKET.COM. ALL RIGHTS RESEVED</p>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			
+			<div class="main-footer">
+				<div class="container">
+					<div class="row">
+					  <div class="footer-1 col-md-9">
+						<div class="about clearfix">
+							<h3>About</h3>
+							<ul>
+								<li><a href="#">Our Company</a></li>
+								<li><a href="#">Careers</a></li>
+								<li><a href="#">Advertising</a></li>
+								<li><a href="#">Press Room</a></li>
+								<li><a href="#">Trademarks</a></li>
+								<li><a href="#">Terms of Service</a></li>
+								<li><a href="#">Privacy Policy</a></li>
+							</ul>
+						  </div>
+						  
+						  <div class="support clearfix">
+							<h3>Support and Contact</h3>
+							<ul>
+								<li><a href="#">Customer Support Contacts</a></li>
+								<li><a href="#">Feedback</a></li>
+								<li><a href="#">Help</a></li>
+								<li><a href="#">Sitemap</a></li>
+							</ul>
+						  </div>
+						  
+						  <div class="social clearfix">
+							<h3>Stay Connected</h3>
+							<ul>
+								<li class="facebook">
+									<a href="#">
+										<i class="fa fa-facebook" aria-hidden="true"></i>
+										Facebook
+									</a>
+								</li>
+								<li class="twitter">
+									<a href="#">
+										<i class="fa fa-twitter" aria-hidden="true"></i>
+										Twitter
+									</a>
+								</li>
+								<li class="linkedin">
+									<a href="#">
+										<i class="fa fa-linkedin-square" aria-hidden="true"></i>
+										LinkedIn
+									</a>
+								</li>
+								<li class="google">
+									<a href="#">
+										<i class="fa fa-google-plus-square" aria-hidden="true"></i>
+										Google+
+									</a>
+								</li>
+								<li class="rss">
+									<a href="#">
+										<i class="fa fa-rss-square" aria-hidden="true"></i>
+										RSS
+									</a>
+								</li>
+							</ul>
+						  </div>
+						</div>
+
+					  <div class="footer-2 col-md-3">
+						 <div class="footer-dashboard">
+							<h3>MyTicket Dashboard</h3>
+							<ul>
+								<li><a href="#">Professional</a></li>
+								<li><a href="#">Subscriber Login</a></li>
+							</ul>
+						  </div>
+					  </div>
+
+					</div>
+				</div>
+			</div>
+		</footer><!-- #colophon -->
+
+		<script src="js/jquery-3.2.0.min.js"></script>
+		<script src="js/bootstrap-slider.min.js"></script>
+		<script src="js/bootstrap-select.min.js"></script>
+		<script src="js/jquery.scrolling-tabs.min.js"></script>
+		<script src="js/jquery.countdown.min.js"></script>
+		<script src="js/jquery.flexslider-min.js"></script>
+		<script src="js/jquery.imagemapster.min.js"></script>
+		<script src="js/tooltip.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/featherlight.min.js"></script>
+		<script src="js/featherlight.gallery.min.js"></script>
+		<script src="js/bootstrap.offcanvas.min.js"></script>
+		<script src="js/main.js"></script>
+		
+	</body>
+</html>

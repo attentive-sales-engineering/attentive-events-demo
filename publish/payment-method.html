@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="description" content="">
+		<meta name="author" content="">
+
+		<title>myticket</title>
+
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/bootstrap-select.min.css">
+		<link rel="stylesheet" href="css/bootstrap-slider.min.css">
+		<link rel="stylesheet" href="css/jquery.scrolling-tabs.min.css">
+		<link rel="stylesheet" href="css/bootstrap-checkbox.css">
+		<link rel="stylesheet" href="css/flexslider.css">
+		<link rel="stylesheet" href="css/featherlight.min.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/bootstrap.offcanvas.min.css">
+		<link rel="stylesheet" href="css/core.css">
+	  
+
+		<!-- Custom styles for this template -->
+		<link rel="stylesheet" href="css/style.css" >
+		<link rel="stylesheet" href="css/responsive.css" >
+
+		<!--[if lt IE 9]>
+			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+			<script src="http://cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js"></script>
+			<script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<header id="masthead" class="site-header">
+			<div class="top-header top-header-bg">
+				<div class="container">
+					<div class="row">
+						<div class="top-left">
+							<ul>
+								<li>
+									<a href="#">
+										<i class="fa fa-phone"></i>
+										+62274 889767
+									</a>
+								</li>
+								<li>
+									<a href="mailto:hello@myticket.com"> 
+										<i class="fa fa-envelope-o"></i>
+										hello@myticket.com
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="top-right">
+							<ul>
+								<li>
+									<a href="#">Sign In</a>
+								</li>
+								<li>
+									<a href="#">Sign Up</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="main-header main-header-bg">
+				<div class="container">
+					<div class="row">
+						<div class="site-branding col-md-3">
+							<h1 class="site-title"><a href="#home" title="myticket" rel="home"><img src="images/logo.png" alt="logo"></a></h1>
+						</div>
+
+						<div class="col-md-9">
+							<nav id="site-navigation" class="navbar">
+							  <!-- toggle get grouped for better mobile display -->
+								<div class="navbar-header">
+									<div class="mobile-cart" ><a href="#">0</a></div>
+									<button type="button" class="navbar-toggle offcanvas-toggle pull-right" data-toggle="offcanvas" data-target="#js-bootstrap-offcanvas">
+										<span class="sr-only">Toggle navigation</span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+									</button>
+								</div>
+
+								<div class="navbar-offcanvas navbar-offcanvas-touch navbar-offcanvas-right" id="js-bootstrap-offcanvas">
+									<button type="button" class="offcanvas-toggle closecanvas" data-toggle="offcanvas" data-target="#js-bootstrap-offcanvas">
+									   <i class="fa fa-times fa-2x" aria-hidden="true"></i>
+									</button>
+							
+									<ul class="nav navbar-nav navbar-right">
+										<li class="active"><a href="full-event-schedule.html">Schedule</a></li>
+										<li><a href="artist-page.html">Concerts</a></li>
+										<li><a href="upcoming-events.html">Sports</a></li>
+										<li><a href="order-ticket-without-seat.html">Parties</a></li>
+										<li><a href="event-by-category.html">Theater</a></li>
+										<li><a href="gallery.html">Gallery</a></li>
+										<li><a href="select-seat-2.html">Ticekts</a></li>
+										<li class="cart"><a href="#">0</a></li>
+									</ul>
+								</div>
+							</nav><!-- #site-navigation -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</header><!-- #masthead -->	
+	
+		<section class="section-page-header">
+			<div class="container">
+				<h1 class="entry-title">Select Payment Method</h1>
+			</div>
+		</section>
+	
+		<section class="section-page-content">
+			<div class="container">
+				<div class="row">
+					<div id="primary" class="col-sm-12 col-md-12">
+						<div class="section-select-payment-method">
+
+							<!-- Nav tabs -->
+							<ul class="nav nav-tabs" role="tablist">
+								<li role="presentation" class="active">
+									<a href="#credit-card" aria-controls="credit-card" role="tab" data-toggle="tab">
+										<i class="fa fa-credit-card" aria-hidden="true"></i>
+										Credit Card
+									</a>
+								</li>
+								<li role="presentation">
+									<a href="#paypal" aria-controls="paypal" role="tab" data-toggle="tab">		
+										<i class="fa fa-paypal" aria-hidden="true"></i>
+										Paypal
+									</a>
+								</li>
+							</ul>
+
+							<!-- Tab panes -->
+							<div class="tab-content clearfix">
+								<div role="tabpanel" class="tab-pane active" id="credit-card">
+									<form>
+										<div class="row">
+											<div class="col-sm-12">
+												<label>Name on Card</label>
+												<input type="text" class="form-control">
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-sm-8">
+												<label>Card Number</label>
+												<input type="text" class="form-control" placeholder="0000-0000-0000-0000">
+											</div>
+											<div class="cvv col-sm-4">
+												<label>CVV</label>
+												<input type="text" class="form-control">
+												<i class="fa fa-question-circle-o" aria-hidden="true"></i>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-sm-6">
+												<label>Month</label>
+												<select class="selectpicker dropdown">
+													<option>Select Month</option>
+													<option>January</option>
+													<option>February</option>
+													<option>March</option>
+													<option>April</option>
+													<option>May</option>
+													<option>June</option>
+													<option>July</option>
+													<option>August</option>
+													<option>September</option>
+													<option>October</option>
+													<option>November</option>
+													<option>December</option>
+												</select>
+											</div>
+											<div class="col-sm-6">
+												<label>Year</label>
+												<select class="selectpicker dropdown">
+													<option>Select Year</option>
+													<option value="2030">2030</option>
+													<option value="2029">2029</option>
+													<option value="2028">2028</option>
+													<option value="2027">2027</option>
+													<option value="2026">2026</option>
+													<option value="2025">2025</option>
+													<option value="2024">2024</option>
+													<option value="2023">2023</option>
+													<option value="2022">2022</option>
+													<option value="2021">2021</option>
+													<option value="2020">2020</option>
+													<option value="2019">2019</option>
+													<option value="2018">2018</option>
+													<option value="2017">2017</option>
+												</select>
+											</div>
+										</div>
+									</form>
+								</div>
+								<div role="tabpanel" class="tab-pane" id="paypal"></div>
+							</div>
+							<div class="section-select-payment-method-action">
+								<div class="row">
+									<div class="col-xs-6 col-sm-6">
+										<button class="secondary-link">Cancel</button>
+									</div>
+									<div class="col-xs-6 col-sm-6">
+										<button class="primary-link">Confirm Payment</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>	
+				</div>	
+			</div>	
+		</section>
+
+		<footer id="colophon" class="site-footer">
+			<div class="top-footer">
+				<div class="container">
+					<div class="row">
+						
+						<div class="col-md-8">
+							<a href="#"><img src="images/logo.png" alt="logo"></a>
+						</div>
+						<div class="col-md-4">
+						
+						<p>&copy; 2016 MYTICKET.COM. ALL RIGHTS RESEVED</p>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			<div class="main-footer">
+				<div class="container">
+					<div class="row">
+					  <div class="footer-1 col-md-9">
+						<div class="about clearfix">
+							<h3>About</h3>
+							<ul>
+								<li><a href="#">Our Company</a></li>
+								<li><a href="#">Careers</a></li>
+								<li><a href="#">Advertising</a></li>
+								<li><a href="#">Press Room</a></li>
+								<li><a href="#">Trademarks</a></li>
+								<li><a href="#">Terms of Service</a></li>
+								<li><a href="#">Privacy Policy</a></li>
+							</ul>
+						  </div>
+						  
+						  <div class="support clearfix">
+							<h3>Support and Contact</h3>
+							<ul>
+								<li><a href="#">Customer Support Contacts</a></li>
+								<li><a href="#">Feedback</a></li>
+								<li><a href="#">Help</a></li>
+								<li><a href="#">Sitemap</a></li>
+							</ul>
+						  </div>
+						  
+						  <div class="social clearfix">
+							<h3>Stay Connected</h3>
+							<ul>
+								<li class="facebook">
+									<a href="#">
+										<i class="fa fa-facebook" aria-hidden="true"></i>
+										Facebook
+									</a>
+								</li>
+								<li class="twitter">
+									<a href="#">
+										<i class="fa fa-twitter" aria-hidden="true"></i>
+										Twitter
+									</a>
+								</li>
+								<li class="linkedin">
+									<a href="#">
+										<i class="fa fa-linkedin-square" aria-hidden="true"></i>
+										LinkedIn
+									</a>
+								</li>
+								<li class="google">
+									<a href="#">
+										<i class="fa fa-google-plus-square" aria-hidden="true"></i>
+										Google+
+									</a>
+								</li>
+								<li class="rss">
+									<a href="#">
+										<i class="fa fa-rss-square" aria-hidden="true"></i>
+										RSS
+									</a>
+								</li>
+							</ul>
+						  </div>
+						</div>
+
+					  <div class="footer-2 col-md-3">
+						 <div class="footer-dashboard">
+							<h3>MyTicket Dashboard</h3>
+							<ul>
+								<li><a href="#">Professional</a></li>
+								<li><a href="#">Subscriber Login</a></li>
+							</ul>
+						  </div>
+					  </div>
+
+					</div>
+				</div>
+			</div>
+		</footer><!-- #colophon -->
+
+		<script src="js/jquery-3.2.0.min.js"></script>
+		<script src="js/bootstrap-slider.min.js"></script>
+		<script src="js/bootstrap-select.min.js"></script>
+		<script src="js/jquery.scrolling-tabs.min.js"></script>
+		<script src="js/jquery.countdown.min.js"></script>
+		<script src="js/jquery.flexslider-min.js"></script>
+		<script src="js/jquery.imagemapster.min.js"></script>
+		<script src="js/tooltip.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/featherlight.min.js"></script>
+		<script src="js/featherlight.gallery.min.js"></script>
+		<script src="js/bootstrap.offcanvas.min.js"></script>
+		<script src="js/main.js"></script>
+
+	</body>
+</html>

@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="description" content="">
+		<meta name="author" content="">
+
+		<title>myticket</title>
+
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/bootstrap-select.min.css">
+		<link rel="stylesheet" href="css/bootstrap-slider.min.css">
+		<link rel="stylesheet" href="css/jquery.scrolling-tabs.min.css">
+		<link rel="stylesheet" href="css/bootstrap-checkbox.css">
+		<link rel="stylesheet" href="css/flexslider.css">
+		<link rel="stylesheet" href="css/featherlight.min.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/bootstrap.offcanvas.min.css">
+		<link rel="stylesheet" href="css/core.css">
+	  
+
+		<!-- Custom styles for this template -->
+		<link rel="stylesheet" href="css/style.css" >
+		<link rel="stylesheet" href="css/responsive.css" >
+
+		<!--[if lt IE 9]>
+			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+			<script src="http://cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js"></script>
+			<script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<header id="masthead" class="site-header">
+			<div class="top-header top-header-bg">
+				<div class="container">
+					<div class="row">
+						<div class="top-left">
+							<ul>
+								<li>
+									<a href="#">
+										<i class="fa fa-phone"></i>
+										+62274 889767
+									</a>
+								</li>
+								<li>
+									<a href="mailto:hello@myticket.com"> 
+										<i class="fa fa-envelope-o"></i>
+										hello@myticket.com
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="top-right">
+							<ul>
+								<li>
+									<a href="#">Sign In</a>
+								</li>
+								<li>
+									<a href="#">Sign Up</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="main-header main-header-bg">
+				<div class="container">
+					<div class="row">
+					  <div class="site-branding col-md-3">
+						<h1 class="site-title"><a href="#" title="myticket" rel="home"><img src="images/logo.png" alt="logo"></a></h1>
+					  </div>
+
+					  <div class="col-md-9">
+						<nav id="site-navigation" class="navbar">
+							  <!-- toggle get grouped for better mobile display -->
+								<div class="navbar-header">
+									<div class="mobile-cart" ><a href="#">0</a></div>
+									<button type="button" class="navbar-toggle offcanvas-toggle pull-right" data-toggle="offcanvas" data-target="#js-bootstrap-offcanvas">
+										<span class="sr-only">Toggle navigation</span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+									</button>
+								</div>
+
+								<div class="navbar-offcanvas navbar-offcanvas-touch navbar-offcanvas-right" id="js-bootstrap-offcanvas">
+									<button type="button" class="offcanvas-toggle closecanvas" data-toggle="offcanvas" data-target="#js-bootstrap-offcanvas">
+									   <i class="fa fa-times fa-2x" aria-hidden="true"></i>
+									</button>
+							
+									<ul class="nav navbar-nav navbar-right">
+										<li class="active"><a href="full-event-schedule.html">Schedule</a></li>
+										<li><a href="artist-page.html">Concerts</a></li>
+										<li><a href="upcoming-events.html">Sports</a></li>
+										<li><a href="order-ticket-without-seat.html">Parties</a></li>
+										<li><a href="event-by-category.html">Theater</a></li>
+										<li><a href="gallery.html">Gallery</a></li>
+										<li><a href="select-seat-2.html">Ticekts</a></li>
+										<li class="cart"><a href="#">0</a></li>
+									</ul>
+								</div>
+							</nav><!-- #site-navigation -->
+					  </div>
+					</div>
+				</div>
+			</div>
+		</header><!-- #masthead -->
+	
+		<section class="section-page-header">
+			<div class="container">
+				<h1 class="entry-title">All Upcoming Events</h1>
+			</div>
+		</section>
+	
+		<section class="section-calendar-events">
+			<div class="container">
+				<div class="row">
+					<div class="section-header">
+						<ul class="nav nav-tabs event-tabs" role="tablist">
+							<li role="presentation" class="active">
+								<a href="#tab1" role="tab" data-toggle="tab">May <span>2016</span></a>
+							</li>
+							<li role="presentation">
+								<a href="#tab2" role="tab" data-toggle="tab">Jun <span>2016</span></a>
+							</li>
+							<li role="presentation">
+								<a href="#tab3" role="tab" data-toggle="tab">Jul <span>2016</span></a>
+							</li>
+							<li role="presentation">
+								<a href="#tab4" role="tab" data-toggle="tab">Aug <span>2016</span></a>
+							</li>
+							<li role="presentation">
+								<a href="#tab5" role="tab" data-toggle="tab">Sep <span>2016</span></a>
+							</li>
+							<li role="presentation">
+								<a href="#tab6" role="tab" data-toggle="tab">Oct <span>2016</span></a>
+							</li>
+							<li role="presentation">
+								<a href="#tab7" role="tab" data-toggle="tab">Nov <span>2016</span></a>
+							</li>
+							<li role="presentation">
+								<a href="#tab8" role="tab" data-toggle="tab">Dec <span>2016</span></a>
+							</li>
+							<li role="presentation">
+								<a href="#tab9" role="tab" data-toggle="tab">Jan <span>2017</span></a>
+							</li>
+							<li role="presentation">
+								<a href="#tab10" role="tab" data-toggle="tab">Feb <span>2017</span></a>
+							</li>
+							<li role="presentation">
+								<a href="#tab11" role="tab" data-toggle="tab">Mar <span>2017</span></a>
+							</li>
+							<li role="presentation">
+								<a href="#tab12" role="tab" data-toggle="tab">Apr <span>2017</span></a>
+							</li>
+						</ul>
+					</div>
+					<div class="section-content">
+						<div class="tab-content">
+						    <div role="tabpanel" class="tab-pane active" id="tab1">
+								<ul class="clearfix">
+									<li>
+										<div class="date">
+											<a href="#">
+												<span class="day">25</span>
+												<span class="month">May</span>
+												<span class="year">2016</span>
+											</a>
+										</div>
+										<a href="#">
+											<img src="images/upcoming-event-1.jpg" alt="image">
+										</a>
+										<div class="info">
+											<p>BMW Open Championship <span>San Francisco</span></p>
+											<a href="#" class="get-ticket">Get Ticket</a>
+										</div>
+									</li>
+									<li>
+										<div class="date">
+											<a href="#">
+												<span class="day">26</span>
+												<span class="month">May</span>
+												<span class="year">2016</span>
+											</a>
+										</div>
+										<a href="#">
+											<img src="images/upcoming-event-2.jpg" alt="image">
+										</a>
+										<div class="info">
+											<p>Kiai Kanjeng Orchestra <span>San Francisco</span></p>
+											<a href="#" class="get-ticket">Get Ticket</a>
+										</div>
+									</li>
+									<li>
+										<div class="date">
+											<a href="#">
+												<span class="day">27</span>
+												<span class="month">May</span>
+												<span class="year">2016</span>
+											</a>
+										</div>
+										<a href="#">
+											<img src="images/upcoming-event-3.jpg" alt="image">
+										</a>
+										<div class="info">
+											<p>Envato Author SF Meetup <span>San Francisco</span></p>
+											<a href="#" class="get-ticket">Get Ticket</a>
+										</div>
+									</li>
+									<li>
+										<div class="date">
+											<a href="#">
+												<span class="day">28</span>
+												<span class="month">May</span>
+												<span class="year">2016</span>
+											</a>
+										</div>
+										<a href="#">
+											<img src="images/upcoming-event-4.jpg" alt="image">
+										</a>
+										<div class="info">
+											<p>FIFA WORLD CUP 2016 <span>San Francisco</span></p>
+											<a href="#" class="get-ticket">Get Ticket</a>
+										</div>
+									</li>
+									<li>
+										<div class="date">
+											<a href="#">
+												<span class="day">29</span>
+												<span class="month">May</span>
+												<span class="year">2016</span>
+											</a>
+										</div>
+										<a href="#">
+											<img src="images/upcoming-event-5.jpg" alt="image">
+										</a>
+										<div class="info">
+											<p>Prep Football America <span>San Francisco</span></p>
+											<a href="#" class="get-ticket">Get Ticket</a>
+										</div>
+									</li>
+									<li>
+										<div class="date">
+											<a href="#">
+												<span class="day">29</span>
+												<span class="month">May</span>
+												<span class="year">2016</span>
+											</a>
+										</div>
+										<a href="#">
+											<img src="images/upcoming-event-6.jpg" alt="image">
+										</a>
+										<div class="info">
+											<p>UEFA Champions League <span>San Francisco</span></p>
+											<a href="#" class="get-ticket">Get Ticket</a>
+										</div>
+									</li>
+								</ul>
+							</div>
+						    <div role="tabpanel" class="tab-pane" id="tab2">
+								<ul class="clearfix">
+									<li>
+										<div class="date">
+											<a href="#">
+												<span class="day">25</span>
+												<span class="month">Jun</span>
+												<span class="year">2016</span>
+											</a>
+										</div>
+										<a href="#">
+											<img src="images/upcoming-event-1.jpg" alt="image">
+										</a>
+										<div class="info">
+											<p>BMW Open Championship <span>San Francisco</span></p>
+											<a href="#" class="get-ticket">Get Ticket</a>
+										</div>
+									</li>
+									<li>
+										<div class="date">
+											<a href="#">
+												<span class="day">26</span>
+												<span class="month">Jun</span>
+												<span class="year">2016</span>
+											</a>
+										</div>
+										<a href="#">
+											<img src="images/upcoming-event-2.jpg" alt="image">
+										</a>
+										<div class="info">
+											<p>Kiai Kanjeng Orchestra <span>San Francisco</span></p>
+											<a href="#" class="get-ticket">Get Ticket</a>
+										</div>
+									</li>
+									<li>
+										<div class="date">
+											<a href="#">
+												<span class="day">27</span>
+												<span class="month">Jun</span>
+												<span class="year">2016</span>
+											</a>
+										</div>
+										<a href="#">
+											<img src="images/upcoming-event-3.jpg" alt="image">
+										</a>
+										<div class="info">
+											<p>Envato Author SF Meetup <span>San Francisco</span></p>
+											<a href="#" class="get-ticket">Get Ticket</a>
+										</div>
+									</li>
+								</ul>
+							
+							</div>
+						    <div role="tabpanel" class="tab-pane" id="tab3">
+								<ul class="clearfix">
+									<li>
+										<div class="date">
+											<a href="#">
+												<span class="day">28</span>
+												<span class="month">Jul</span>
+												<span class="year">2016</span>
+											</a>
+										</div>
+										<a href="#">
+											<img src="images/upcoming-event-4.jpg" alt="image">
+										</a>
+										<div class="info">
+											<p>FIFA WORLD CUP 2016 <span>San Francisco</span></p>
+											<a href="#" class="get-ticket">Get Ticket</a>
+										</div>
+									</li>
+									<li>
+										<div class="date">
+											<a href="#">
+												<span class="day">29</span>
+												<span class="month">Jul</span>
+												<span class="year">2016</span>
+											</a>
+										</div>
+										<a href="#">
+											<img src="images/upcoming-event-5.jpg" alt="image">
+										</a>
+										<div class="info">
+											<p>Prep Football America <span>San Francisco</span></p>
+											<a href="#" class="get-ticket">Get Ticket</a>
+										</div>
+									</li>
+									<li>
+										<div class="date">
+											<a href="#">
+												<span class="day">29</span>
+												<span class="month">Jul</span>
+												<span class="year">2016</span>
+											</a>
+										</div>
+										<a href="#">
+											<img src="images/upcoming-event-6.jpg" alt="image">
+										</a>
+										<div class="info">
+											<p>UEFA Champions League <span>San Francisco</span></p>
+											<a href="#" class="get-ticket">Get Ticket</a>
+										</div>
+									</li>
+								</ul>
+							
+							</div>
+						    <div role="tabpanel" class="tab-pane" id="tab4">
+								<ul class="clearfix">
+									<li>
+										<div class="date">
+											<a href="#">
+												<span class="day">29</span>
+												<span class="month">Aug</span>
+												<span class="year">2016</span>
+											</a>
+										</div>
+										<a href="#">
+											<img src="images/upcoming-event-6.jpg" alt="image">
+										</a>
+										<div class="info">
+											<p>UEFA Champions League <span>San Francisco</span></p>
+											<a href="#" class="get-ticket">Get Ticket</a>
+										</div>
+									</li>
+								</ul>
+							</div>
+						    <div role="tabpanel" class="tab-pane" id="tab5">
+								<ul class="clearfix">
+									<li>
+										<div class="date">
+											<a href="#">
+												<span class="day">25</span>
+												<span class="month">Sep</span>
+												<span class="year">2016</span>
+											</a>
+										</div>
+										<a href="#">
+											<img src="images/upcoming-event-1.jpg" alt="image">
+										</a>
+										<div class="info">
+											<p>BMW Open Championship <span>San Francisco</span></p>
+											<a href="#" class="get-ticket">Get Ticket</a>
+										</div>
+									</li>
+									<li>
+										<div class="date">
+											<a href="#">
+												<span class="day">26</span>
+												<span class="month">Sep</span>
+												<span class="year">2016</span>
+											</a>
+										</div>
+										<a href="#">
+											<img src="images/upcoming-event-2.jpg" alt="image">
+										</a>
+										<div class="info">
+											<p>Kiai Kanjeng Orchestra <span>San Francisco</span></p>
+											<a href="#" class="get-ticket">Get Ticket</a>
+										</div>
+									</li>
+									<li>
+										<div class="date">
+											<a href="#">
+												<span class="day">27</span>
+												<span class="month">Sep</span>
+												<span class="year">2016</span>
+											</a>
+										</div>
+										<a href="#">
+											<img src="images/upcoming-event-3.jpg" alt="image">
+										</a>
+										<div class="info">
+											<p>Envato Author SF Meetup <span>San Francisco</span></p>
+											<a href="#" class="get-ticket">Get Ticket</a>
+										</div>
+									</li>
+									<li>
+										<div class="date">
+											<a href="#">
+												<span class="day">28</span>
+												<span class="month">Sep</span>
+												<span class="year">2016</span>
+											</a>
+										</div>
+										<a href="#">
+											<img src="images/upcoming-event-4.jpg" alt="image">
+										</a>
+										<div class="info">
+											<p>FIFA WORLD CUP 2016 <span>San Francisco</span></p>
+											<a href="#" class="get-ticket">Get Ticket</a>
+										</div>
+									</li>
+								</ul>
+							
+							</div>
+						    <div role="tabpanel" class="tab-pane" id="tab6">
+								<ul class="clearfix">
+									<li>
+										<div class="date">
+											<a href="#">
+												<span class="day">28</span>
+												<span class="month">Oct</span>
+												<span class="year">2016</span>
+											</a>
+										</div>
+										<a href="#">
+											<img src="images/upcoming-event-4.jpg" alt="image">
+										</a>
+										<div class="info">
+											<p>FIFA WORLD CUP 2016 <span>San Francisco</span></p>
+											<a href="#" class="get-ticket">Get Ticket</a>
+										</div>
+									</li>
+									<li>
+										<div class="date">
+											<a href="#">
+												<span class="day">29</span>
+												<span class="month">Oct</span>
+												<span class="year">2016</span>
+											</a>
+										</div>
+										<a href="#">
+											<img src="images/upcoming-event-5.jpg" alt="image">
+										</a>
+										<div class="info">
+											<p>Prep Football America <span>San Francisco</span></p>
+											<a href="#" class="get-ticket">Get Ticket</a>
+										</div>
+									</li>
+									<li>
+										<div class="date">
+											<a href="#">
+												<span class="day">29</span>
+												<span class="month">Oct</span>
+												<span class="year">2016</span>
+											</a>
+										</div>
+										<a href="#">
+											<img src="images/upcoming-event-6.jpg" alt="image">
+										</a>
+										<div class="info">
+											<p>UEFA Champions League <span>San Francisco</span></p>
+											<a href="#" class="get-ticket">Get Ticket</a>
+										</div>
+									</li>
+								</ul>
+							</div>
+						    <div role="tabpanel" class="tab-pane" id="tab7">
+								<ul class="clearfix">
+									<li>
+										<div class="date">
+											<a href="#">
+												<span class="day">25</span>
+												<span class="month">Nov</span>
+												<span class="year">2016</span>
+											</a>
+										</div>
+										<a href="#">
+											<img src="images/upcoming-event-1.jpg" alt="image">
+										</a>
+										<div class="info">
+											<p>BMW Open Championship <span>San Francisco</span></p>
+											<a href="#" class="get-ticket">Get Ticket</a>
+										</div>
+									</li>
+									<li>
+										<div class="date">
+											<a href="#">
+												<span class="day">26</span>
+												<span class="month">Nov</span>
+												<span class="year">2016</span>
+											</a>
+										</div>
+										<a href="#">
+											<img src="images/upcoming-event-2.jpg" alt="image">
+										</a>
+										<div class="info">
+											<p>Kiai Kanjeng Orchestra <span>San Francisco</span></p>
+											<a href="#" class="get-ticket">Get Ticket</a>
+										</div>
+									</li>
+									<li>
+										<div class="date">
+											<a href="#">
+												<span class="day">27</span>
+												<span class="month">Nov</span>
+												<span class="year">2016</span>
+											</a>
+										</div>
+										<a href="#">
+											<img src="images/upcoming-event-3.jpg" alt="image">
+										</a>
+										<div class="info">
+											<p>Envato Author SF Meetup <span>San Francisco</span></p>
+											<a href="#" class="get-ticket">Get Ticket</a>
+										</div>
+									</li>
+								</ul>
+							
+							</div>
+						    <div role="tabpanel" class="tab-pane" id="tab8">
+								<ul class="clearfix">
+									<li>
+										<div class="date">
+											<a href="#">
+												<span class="day">29</span>
+												<span class="month">Dec</span>
+												<span class="year">2016</span>
+											</a>
+										</div>
+										<a href="#">
+											<img src="images/upcoming-event-5.jpg" alt="image">
+										</a>
+										<div class="info">
+											<p>Prep Football America <span>San Francisco</span></p>
+											<a href="#" class="get-ticket">Get Ticket</a>
+										</div>
+									</li>
+								</ul>
+							
+							</div>
+						    <div role="tabpanel" class="tab-pane" id="tab9">
+								<ul class="clearfix">
+									<li>
+										<div class="date">
+											<a href="#">
+												<span class="day">28</span>
+												<span class="month">Jan</span>
+												<span class="year">2017</span>
+											</a>
+										</div>
+										<a href="#">
+											<img src="images/upcoming-event-4.jpg" alt="image">
+										</a>
+										<div class="info">
+											<p>FIFA WORLD CUP 2016 <span>San Francisco</span></p>
+											<a href="#" class="get-ticket">Get Ticket</a>
+										</div>
+									</li>
+								</ul>
+							
+							</div>
+						    <div role="tabpanel" class="tab-pane" id="tab10">
+								<ul class="clearfix">
+									<li>
+										<div class="date">
+											<a href="#">
+												<span class="day">27</span>
+												<span class="month">Feb</span>
+												<span class="year">2017</span>
+											</a>
+										</div>
+										<a href="#">
+											<img src="images/upcoming-event-3.jpg" alt="image">
+										</a>
+										<div class="info">
+											<p>Envato Author SF Meetup <span>San Francisco</span></p>
+											<a href="#" class="get-ticket">Get Ticket</a>
+										</div>
+									</li>
+								</ul>
+							</div>
+				
+							<div role="tabpanel" class="tab-pane" id="tab11">
+								<ul class="clearfix">
+									<li>
+										<div class="date">
+											<a href="#">
+												<span class="day">29</span>
+												<span class="month">Mar</span>
+												<span class="year">2017</span>
+											</a>
+										</div>
+										<a href="#">
+											<img src="images/upcoming-event-5.jpg" alt="image">
+										</a>
+										<div class="info">
+											<p>Prep Football America <span>San Francisco</span></p>
+											<a href="#" class="get-ticket">Get Ticket</a>
+										</div>
+									</li>
+									<li>
+										<div class="date">
+											<a href="#">
+												<span class="day">29</span>
+												<span class="month">Mar</span>
+												<span class="year">2017</span>
+											</a>
+										</div>
+										<a href="#">
+											<img src="images/upcoming-event-6.jpg" alt="image">
+										</a>
+										<div class="info">
+											<p>UEFA Champions League <span>San Francisco</span></p>
+											<a href="#" class="get-ticket">Get Ticket</a>
+										</div>
+									</li>
+								</ul>
+							</div>
+							
+						    <div role="tabpanel" class="tab-pane" id="tab12">
+								<ul class="clearfix">
+									<li>
+										<div class="date">
+											<a href="#">
+												<span class="day">25</span>
+												<span class="month">Apr</span>
+												<span class="year">2017</span>
+											</a>
+										</div>
+										<a href="#">
+											<img src="images/upcoming-event-1.jpg" alt="image">
+										</a>
+										<div class="info">
+											<p>BMW Open Championship <span>San Francisco</span></p>
+											<a href="#" class="get-ticket">Get Ticket</a>
+										</div>
+									</li>
+									<li>
+										<div class="date">
+											<a href="#">
+												<span class="day">26</span>
+												<span class="month">Apr</span>
+												<span class="year">2017</span>
+											</a>
+										</div>
+										<a href="#">
+											<img src="images/upcoming-event-2.jpg" alt="image">
+										</a>
+										<div class="info">
+											<p>Kiai Kanjeng Orchestra <span>San Francisco</span></p>
+											<a href="#" class="get-ticket">Get Ticket</a>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<section class="section-newsletter">
+			<div class="container">
+				<div class="section-content">
+					<h2>Stay Up to date With Your Favorite Events!</h2>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh <br> euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+					<div class="newsletter-form clearfix">
+						<input type="email" placeholder="Your Email Address">
+						<input type="submit" value="Subscribe">
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer id="colophon" class="site-footer">
+			<div class="top-footer">
+				<div class="container">
+					<div class="row">
+						
+						<div class="col-sm-8 col-md-8">
+							<a href="#"><img src="images/logo.png" alt="logo"></a>
+						</div>
+						<div class="col-sm-4 col-md-4">
+						
+						<p>&copy; 2016 MYTICKET.COM. ALL RIGHTS RESEVED</p>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			<div class="main-footer">
+				<div class="container">
+					<div class="row">
+					  <div class="footer-1 col-sm-9 col-md-9">
+						<div class="about clearfix">
+							<h3>About</h3>
+							<ul>
+								<li><a href="#">Our Company</a></li>
+								<li><a href="#">Careers</a></li>
+								<li><a href="#">Advertising</a></li>
+								<li><a href="#">Press Room</a></li>
+								<li><a href="#">Trademarks</a></li>
+								<li><a href="#">Terms of Service</a></li>
+								<li><a href="#">Privacy Policy</a></li>
+							</ul>
+						  </div>
+						  
+						  <div class="support clearfix">
+							<h3>Support and Contact</h3>
+							<ul>
+								<li><a href="#">Customer Support Contacts</a></li>
+								<li><a href="#">Feedback</a></li>
+								<li><a href="#">Help</a></li>
+								<li><a href="#">Sitemap</a></li>
+							</ul>
+						  </div>
+						  
+						  <div class="social clearfix">
+							<h3>Stay Connected</h3>
+							<ul>
+								<li class="facebook">
+									<a href="#">
+										<i class="fa fa-facebook" aria-hidden="true"></i>
+										Facebook
+									</a>
+								</li>
+								<li class="twitter">
+									<a href="#">
+										<i class="fa fa-twitter" aria-hidden="true"></i>
+										Twitter
+									</a>
+								</li>
+								<li class="linkedin">
+									<a href="#">
+										<i class="fa fa-linkedin-square" aria-hidden="true"></i>
+										LinkedIn
+									</a>
+								</li>
+								<li class="google">
+									<a href="#">
+										<i class="fa fa-google-plus-square" aria-hidden="true"></i>
+										Google+
+									</a>
+								</li>
+								<li class="rss">
+									<a href="#">
+										<i class="fa fa-rss-square" aria-hidden="true"></i>
+										RSS
+									</a>
+								</li>
+							</ul>
+						  </div>
+						</div>
+
+					  <div class="footer-2 col-sm-3 col-md-3">
+						 <div class="footer-dashboard">
+							<h3>MyTicket Dashboard</h3>
+							<ul>
+								<li><a href="#">Professional</a></li>
+								<li><a href="#">Subscriber Login</a></li>
+							</ul>
+						  </div>
+					  </div>
+
+					</div>
+				</div>
+			</div>
+		</footer><!-- #colophon -->
+
+		<script src="js/jquery-3.2.0.min.js"></script>
+		<script src="js/bootstrap-slider.min.js"></script>
+		<script src="js/bootstrap-select.min.js"></script>
+		<script src="js/jquery.scrolling-tabs.min.js"></script>
+		<script src="js/jquery.countdown.min.js"></script>
+		<script src="js/jquery.flexslider-min.js"></script>
+		<script src="js/jquery.imagemapster.min.js"></script>
+		<script src="js/tooltip.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/featherlight.min.js"></script>
+		<script src="js/featherlight.gallery.min.js"></script>
+		<script src="js/bootstrap.offcanvas.min.js"></script>
+		<script src="js/main.js"></script>
+
+	</body>
+</html>
