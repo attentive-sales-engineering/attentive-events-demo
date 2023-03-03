@@ -73,7 +73,11 @@
 				<div class="container">
 					<div class="row">
 						<div class="site-branding col-md-3">
-							<h1 class="site-title"><a href="homepage.html" title="myticket" rel="home"><img src="images/logo.png" alt="logo"></a></h1>
+							<h1 class="site-title">
+								<a href="index.html" title="myticket" rel="home">
+									<img src="images/logo.png" alt="logo">
+								</a>
+							</h1>
 						</div>
 
 						<div class="col-md-9">
@@ -108,107 +112,17 @@
 				</div>
 			</div>
 		</header><!-- #masthead -->	
-	
-		<section class="section-page-header">
+		
+		<section class="section-page-content error-404">
 			<div class="container">
-				<h1 class="entry-title">Order Details</h1>
-			</div>
-		</section>
-	
-		<section class="section-page-content">
-			<div class="container">
-				<div class="row">
-					<div id="primary" class="col-md-6">
-						<div class="section-order-details-event-title">
-							<span class="event-caption">SMS CHAMPIONS LEAGUE</span>
-							<h2 class="event-title"><strong>NEW YORK FC</strong> VS <strong>MIAMI UNITED</strong></h2>
-							<img class="event-img" src="images/order-details-img.jpg" alt="image">
-						</div>
-					</div>	
-					
-					<div id="secondary" class="col-md-6">
-						<div class="section-order-details-event-info">
-							<div class="venue-details">
-								<h3>Venue & Event Information</h3>
-								<div class="venue-details-info">
-									<p>Stadium Seating</p>
-									<p>	<script> 													
-											const tomorrow = new Date()
-											tomorrow.setDate(tomorrow.getDate() + 7)
-											document.write(tomorrow.toDateString()); 
-										</script>
-										8:30 PM
-									</p>
-								</div>
+				<div class="row">					
+					<div id="primary" class="col-sm-12 col-md-12">
+						<div class="section-404">
+							<div class="col-sm-offset-5 col-sm-7 col-md-offset-6 col-md-6">
+								<p> <strong> Purchase Confirmation  </strong>
+									<br> Your Confirmation Code is: A1B2C3</p>
+								<a href="index.html" class="secondary-link">Find More events</a>
 							</div>
-							
-							<div class="seat-details">
-								<h3>Seats Order Information</h3>
-								<div class="seat-details-info">
-									<table class="table seat-row">
-										<thead>
-											<tr>
-												<th>Section</th>
-												<th>Row</th>
-												<th>Seats</th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
-												<td>C16-Middle</td>
-												<td>5</td>
-												<td>11-12</td>
-											</tr>
-										</tbody>
-									</table>	
-									<table class="table number-tickets">
-										<thead>
-											<tr>
-												<th>Delivery</th>
-												<th>Number of Tickets</th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
-												<td>Instant Download</td>
-												<td>
-													<div class="qty-select">
-														<div class="qty-minus"> 
-															<a class="qty-btn" href="#">-</a>
-														</div>
-														<div class="qty-input">
-															<input type="text" class="quantity-input" value="2" />
-														</div>
-														<div class="qty-plus"> 
-															<a class="qty-btn" href="#">+</a>
-														</div>
-													</div>
-												</td>
-											</tr>
-										</tbody>
-									</table>
-								</div>
-								<div class="seat-details-info-price">
-									<table class="table total-price">
-										<tbody>
-											<tr>
-												<td>Total Price</td>
-												<td class="price">USD $500</td>
-											</tr>
-										</tbody>
-									</table>
-								</div>
-							</div>
-						</div>
-						<div class="section-order-details-event-action">
-							<ul class="row">
-								<li class="col-xs-6 col-sm-6">
-									<a class="secondary-link" href="#">Back</a>
-								</li>
-								<li class="col-xs-6 col-sm-6">
-									<a class="primary-link" href="order-review.html">Place Order</a>
-								</li>
-							</ul>
 						</div>
 					</div>
 				</div>
@@ -221,16 +135,27 @@
 					<div class="row">
 						
 						<div class="col-md-8">
-							<a href="#"><img src="images/logo.png" alt="logo"></a>
-						</div>
-					</div>
-					
+							<a href="index.html"><img src="images/logo.png" alt="logo"></a>
+						</div>			
 				</div>
 			</div>
 			<div class="main-footer">
 				<div class="container">
 					<div class="row">
 					  <div class="footer-1 col-md-9">
+						<div class="about clearfix">
+							<h3>About</h3>
+							<ul>
+								<li><a href="#">Our Company</a></li>
+								<li><a href="#">Careers</a></li>
+								<li><a href="#">Advertising</a></li>
+								<li><a href="#">Press Room</a></li>
+								<li><a href="#">Trademarks</a></li>
+								<li><a href="#">Terms of Service</a></li>
+								<li><a href="#">Privacy Policy</a></li>
+							</ul>
+						  </div>
+						  
 						  <div class="support clearfix">
 							<h3>Support and Contact</h3>
 							<ul>
@@ -262,6 +187,18 @@
 										LinkedIn
 									</a>
 								</li>
+								<li class="google">
+									<a href="#">
+										<i class="fa fa-google-plus-square" aria-hidden="true"></i>
+										Google+
+									</a>
+								</li>
+								<li class="rss">
+									<a href="#">
+										<i class="fa fa-rss-square" aria-hidden="true"></i>
+										RSS
+									</a>
+								</li>
 							</ul>
 						  </div>
 						</div>
@@ -280,7 +217,7 @@
 				</div>
 			</div>
 		</footer><!-- #colophon -->
-
+		
 		<script src="js/jquery-3.2.0.min.js"></script>
 		<script src="js/bootstrap-slider.min.js"></script>
 		<script src="js/bootstrap-select.min.js"></script>
@@ -293,8 +230,8 @@
 		<script src="js/featherlight.min.js"></script>
 		<script src="js/featherlight.gallery.min.js"></script>
 		<script src="js/bootstrap.offcanvas.min.js"></script>
-		<script src="js/main.js"></script>
+		<script src="js/main.js"></script>	
 		<script src="js/attentive-sdk.js"></script>
-        <script src="https://cdn.attn.tv/attentivesportsdemo/dtag.js"></script>
+		<script src="https://cdn.attn.tv/attentivesportsdemo/dtag.js"></script>
 	</body>
 </html>

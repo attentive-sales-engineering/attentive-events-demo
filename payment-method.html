@@ -73,11 +73,7 @@
 				<div class="container">
 					<div class="row">
 						<div class="site-branding col-md-3">
-							<h1 class="site-title">
-								<a href="homepage.html" title="myticket" rel="home">
-									<img src="images/logo.png" alt="logo">
-								</a>
-							</h1>
+							<h1 class="site-title"><a href="index.html" title="myticket" rel="home"><img src="images/logo.png" alt="logo"></a></h1>
 						</div>
 
 						<div class="col-md-9">
@@ -112,21 +108,144 @@
 				</div>
 			</div>
 		</header><!-- #masthead -->	
-		
-		<section class="section-page-content error-404">
+	
+		<section class="section-page-header">
 			<div class="container">
-				<div class="row">					
+				<h1 class="entry-title">Select Payment Method</h1>
+			</div>
+		</section>
+	
+		<section class="section-page-content">
+			<div class="container">
+				<div class="row">
 					<div id="primary" class="col-sm-12 col-md-12">
-						<div class="section-404">
-							<div class="col-sm-offset-5 col-sm-7 col-md-offset-6 col-md-6">
-								<p> <strong> Purchase Confirmation  </strong>
-									<br> Your Confirmation Code is: A1B2C3</p>
-								<a href="homepage.html" class="secondary-link">Find More events</a>
+						<div class="section-select-payment-method">
+
+							<!-- Nav tabs -->
+							<ul class="nav nav-tabs" role="tablist">
+								<li role="presentation" class="active">
+									<a href="#credit-card" aria-controls="credit-card" role="tab" data-toggle="tab">
+										<i class="fa fa-credit-card" aria-hidden="true"></i>
+										Credit Card
+									</a>
+								</li>
+								<li role="presentation">
+									<a href="#paypal" aria-controls="paypal" role="tab" data-toggle="tab">		
+										<i class="fa fa-paypal" aria-hidden="true"></i>
+										Paypal
+									</a>
+								</li>
+							</ul>
+
+							<!-- Checkout Form -->
+							<div class="tab-content clearfix">
+								<div role="tabpanel" class="tab-pane active" id="credit-card">
+									<form action = "confirmation.html" class="form1 clearfix">
+										<div class="row">
+											<div class="col-sm-6">
+												<label>First Name</label>
+												<input type="text" id = "first name" class="form-control">
+											</div>
+											<div class="col-sm-6">
+												<label>Last Name</label>
+												<input type="text" id = "last name" class="form-control">
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-sm-12">
+												<label>Email Address</label>
+												<input type="text" id = "email" class="form-control">
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-sm-12">
+												<label>Phone Number</label>
+												<input id = "phone" type="text" class="form-control"
+												placeholder="10-digit Phone Number (e.g. +1-987-654-3210)" required>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-sm-8">
+												<label>Card Number</label>
+												<input type="text" class="form-control" placeholder="0000-0000-0000-0000">
+											</div>
+											<div class="cvv col-sm-4">
+												<label>CVV</label>
+												<input type="text" class="form-control">
+												<i class="fa fa-question-circle-o" aria-hidden="true"></i>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-sm-6">
+												<label>Month</label>
+												<select class="selectpicker dropdown">
+													<option>Select Month</option>
+													<option>January</option>
+													<option>February</option>
+													<option>March</option>
+													<option>April</option>
+													<option>May</option>
+													<option>June</option>
+													<option>July</option>
+													<option>August</option>
+													<option>September</option>
+													<option>October</option>
+													<option>November</option>
+													<option>December</option>
+												</select>
+											</div>
+											<div class="col-sm-6">
+												<label>Year</label>
+												<select class="selectpicker dropdown">
+													<option>Select Year</option>
+													<option value="2032">2032</option>
+													<option value="2031">2031</option>
+													<option value="2030">2030</option>
+													<option value="2029">2029</option>
+													<option value="2028">2028</option>
+													<option value="2027">2027</option>
+													<option value="2026">2026</option>
+													<option value="2025">2025</option>
+													<option value="2024">2024</option>
+													<option value="2023">2023</option>
+												</select>
+											</div>
+											<div class="col-sm-12">
+												<div class="row">
+														<p>  
+															<!-- Extra Space-->
+														</p>
+												</div>
+											</div>
+											<div class="col-12 offset-md-2">
+												<form>
+													<div class="form-check">
+														<input class="form-check-input" type="checkbox" value="yes"
+															id="sms_opt_in">
+														<label class="form-check-label" for="sms_opt_in">Opt In for
+															SMS Marketing & Transactional Alerts*</label>
+													</div>
+												</form>
+											</div>
+										</div>
+									</form>
+								</div>
+								<div role="tabpanel" class="tab-pane" id="paypal"></div>
+							</div>
+							<div class="section-select-payment-method-action">
+								<div class="row">
+									<div class="col-xs-6 col-sm-6">
+										<button class="secondary-link">Cancel</button>
+									</div>
+									<div class="col-xs-6 col-sm-6">
+										<button class="primary-link" type="submit">Confirm Payment</button>
+									</div>
+								</div>
 							</div>
 						</div>
-					</div>
-				</div>
-			</div>
+					</div>	
+				</div>	
+			</div>	
 		</section>
 
 		<footer id="colophon" class="site-footer">
@@ -135,8 +254,14 @@
 					<div class="row">
 						
 						<div class="col-md-8">
-							<a href="homepage.html"><img src="images/logo.png" alt="logo"></a>
-						</div>			
+							<a href="#"><img src="images/logo.png" alt="logo"></a>
+						</div>
+						<div class="col-md-4">
+						
+						<p>&copy; 2023 Attentive.com</p>
+						</div>
+					</div>
+					
 				</div>
 			</div>
 			<div class="main-footer">
@@ -217,7 +342,7 @@
 				</div>
 			</div>
 		</footer><!-- #colophon -->
-		
+
 		<script src="js/jquery-3.2.0.min.js"></script>
 		<script src="js/bootstrap-slider.min.js"></script>
 		<script src="js/bootstrap-select.min.js"></script>
@@ -230,8 +355,8 @@
 		<script src="js/featherlight.min.js"></script>
 		<script src="js/featherlight.gallery.min.js"></script>
 		<script src="js/bootstrap.offcanvas.min.js"></script>
-		<script src="js/main.js"></script>	
+		<script src="js/main.js"></script>
 		<script src="js/attentive-sdk.js"></script>
-		<script src="https://cdn.attn.tv/attentivesportsdemo/dtag.js"></script>
+        <script src="https://cdn.attn.tv/attentivesportsdemo/dtag.js"></script>
 	</body>
 </html>

@@ -73,7 +73,7 @@
 				<div class="container">
 					<div class="row">
 						<div class="site-branding col-md-3">
-							<h1 class="site-title"><a href="homepage.html" title="myticket" rel="home"><img src="images/logo.png" alt="logo"></a></h1>
+							<h1 class="site-title"><a href="index.html" title="myticket" rel="home"><img src="images/logo.png" alt="logo"></a></h1>
 						</div>
 
 						<div class="col-md-9">
@@ -111,141 +111,108 @@
 	
 		<section class="section-page-header">
 			<div class="container">
-				<h1 class="entry-title">Select Payment Method</h1>
+				<h1 class="entry-title">Order Details</h1>
 			</div>
 		</section>
 	
 		<section class="section-page-content">
 			<div class="container">
 				<div class="row">
-					<div id="primary" class="col-sm-12 col-md-12">
-						<div class="section-select-payment-method">
-
-							<!-- Nav tabs -->
-							<ul class="nav nav-tabs" role="tablist">
-								<li role="presentation" class="active">
-									<a href="#credit-card" aria-controls="credit-card" role="tab" data-toggle="tab">
-										<i class="fa fa-credit-card" aria-hidden="true"></i>
-										Credit Card
-									</a>
-								</li>
-								<li role="presentation">
-									<a href="#paypal" aria-controls="paypal" role="tab" data-toggle="tab">		
-										<i class="fa fa-paypal" aria-hidden="true"></i>
-										Paypal
-									</a>
-								</li>
-							</ul>
-
-							<!-- Checkout Form -->
-							<div class="tab-content clearfix">
-								<div role="tabpanel" class="tab-pane active" id="credit-card">
-									<form action = "confirmation.html" class="form1 clearfix">
-										<div class="row">
-											<div class="col-sm-6">
-												<label>First Name</label>
-												<input type="text" id = "first name" class="form-control">
-											</div>
-											<div class="col-sm-6">
-												<label>Last Name</label>
-												<input type="text" id = "last name" class="form-control">
-											</div>
-										</div>
-										<div class="row">
-											<div class="col-sm-12">
-												<label>Email Address</label>
-												<input type="text" id = "email" class="form-control">
-											</div>
-										</div>
-										<div class="row">
-											<div class="col-sm-12">
-												<label>Phone Number</label>
-												<input id = "phone" type="text" class="form-control"
-												placeholder="10-digit Phone Number (e.g. +1-987-654-3210)" required>
-											</div>
-										</div>
-										<div class="row">
-											<div class="col-sm-8">
-												<label>Card Number</label>
-												<input type="text" class="form-control" placeholder="0000-0000-0000-0000">
-											</div>
-											<div class="cvv col-sm-4">
-												<label>CVV</label>
-												<input type="text" class="form-control">
-												<i class="fa fa-question-circle-o" aria-hidden="true"></i>
-											</div>
-										</div>
-										<div class="row">
-											<div class="col-sm-6">
-												<label>Month</label>
-												<select class="selectpicker dropdown">
-													<option>Select Month</option>
-													<option>January</option>
-													<option>February</option>
-													<option>March</option>
-													<option>April</option>
-													<option>May</option>
-													<option>June</option>
-													<option>July</option>
-													<option>August</option>
-													<option>September</option>
-													<option>October</option>
-													<option>November</option>
-													<option>December</option>
-												</select>
-											</div>
-											<div class="col-sm-6">
-												<label>Year</label>
-												<select class="selectpicker dropdown">
-													<option>Select Year</option>
-													<option value="2032">2032</option>
-													<option value="2031">2031</option>
-													<option value="2030">2030</option>
-													<option value="2029">2029</option>
-													<option value="2028">2028</option>
-													<option value="2027">2027</option>
-													<option value="2026">2026</option>
-													<option value="2025">2025</option>
-													<option value="2024">2024</option>
-													<option value="2023">2023</option>
-												</select>
-											</div>
-											<div class="col-sm-12">
-												<div class="row">
-														<p>  
-															<!-- Extra Space-->
-														</p>
-												</div>
-											</div>
-											<div class="col-12 offset-md-2">
-												<form>
-													<div class="form-check">
-														<input class="form-check-input" type="checkbox" value="yes"
-															id="sms_opt_in">
-														<label class="form-check-label" for="sms_opt_in">Opt In for
-															SMS Marketing & Transactional Alerts*</label>
-													</div>
-												</form>
-											</div>
-										</div>
-									</form>
+					<div id="primary" class="col-md-6">
+						<div class="section-order-details-event-title">
+							<span class="event-caption">SMS CHAMPIONS LEAGUE</span>
+							<h2 class="event-title"><strong>NEW YORK FC</strong> VS <strong>MIAMI UNITED</strong></h2>
+							<img class="event-img" src="images/order-details-img.jpg" alt="image">
+						</div>
+					</div>	
+					
+					<div id="secondary" class="col-md-6">
+						<div class="section-order-details-event-info">
+							<div class="venue-details">
+								<h3>Venue & Event Information</h3>
+								<div class="venue-details-info">
+									<p>Stadium Seating</p>
+									<p>	<script> 													
+											const tomorrow = new Date()
+											tomorrow.setDate(tomorrow.getDate() + 7)
+											document.write(tomorrow.toDateString()); 
+										</script>
+										8:30 PM
+									</p>
 								</div>
-								<div role="tabpanel" class="tab-pane" id="paypal"></div>
 							</div>
-							<div class="section-select-payment-method-action">
-								<div class="row">
-									<div class="col-xs-6 col-sm-6">
-										<button class="secondary-link">Cancel</button>
-									</div>
-									<div class="col-xs-6 col-sm-6">
-										<button class="primary-link" type="submit">Confirm Payment</button>
-									</div>
+							
+							<div class="seat-details">
+								<h3>Seats Order Information</h3>
+								<div class="seat-details-info">
+									<table class="table seat-row">
+										<thead>
+											<tr>
+												<th>Section</th>
+												<th>Row</th>
+												<th>Seats</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>C16-Middle</td>
+												<td>5</td>
+												<td>11-12</td>
+											</tr>
+										</tbody>
+									</table>	
+									<table class="table number-tickets">
+										<thead>
+											<tr>
+												<th>Delivery</th>
+												<th>Number of Tickets</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>Instant Download</td>
+												<td>
+													<div class="qty-select">
+														<div class="qty-minus"> 
+															<a class="qty-btn" href="#">-</a>
+														</div>
+														<div class="qty-input">
+															<input type="text" class="quantity-input" value="2" />
+														</div>
+														<div class="qty-plus"> 
+															<a class="qty-btn" href="#">+</a>
+														</div>
+													</div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<div class="seat-details-info-price">
+									<table class="table total-price">
+										<tbody>
+											<tr>
+												<td>Total Price</td>
+												<td class="price">USD $500</td>
+											</tr>
+										</tbody>
+									</table>
 								</div>
 							</div>
 						</div>
-					</div>	
-				</div>	
-			</div>	
+						<div class="section-order-details-event-action">
+							<ul class="row">
+								<li class="col-xs-6 col-sm-6">
+									<a class="secondary-link" href="#">Back</a>
+								</li>
+								<li class="col-xs-6 col-sm-6">
+									<a class="primary-link" href="order-review.html">Place Order</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
 		</section>
 
 		<footer id="colophon" class="site-footer">
@@ -256,10 +223,6 @@
 						<div class="col-md-8">
 							<a href="#"><img src="images/logo.png" alt="logo"></a>
 						</div>
-						<div class="col-md-4">
-						
-						<p>&copy; 2023 Attentive.com</p>
-						</div>
 					</div>
 					
 				</div>
@@ -268,19 +231,6 @@
 				<div class="container">
 					<div class="row">
 					  <div class="footer-1 col-md-9">
-						<div class="about clearfix">
-							<h3>About</h3>
-							<ul>
-								<li><a href="#">Our Company</a></li>
-								<li><a href="#">Careers</a></li>
-								<li><a href="#">Advertising</a></li>
-								<li><a href="#">Press Room</a></li>
-								<li><a href="#">Trademarks</a></li>
-								<li><a href="#">Terms of Service</a></li>
-								<li><a href="#">Privacy Policy</a></li>
-							</ul>
-						  </div>
-						  
 						  <div class="support clearfix">
 							<h3>Support and Contact</h3>
 							<ul>
@@ -310,18 +260,6 @@
 									<a href="#">
 										<i class="fa fa-linkedin-square" aria-hidden="true"></i>
 										LinkedIn
-									</a>
-								</li>
-								<li class="google">
-									<a href="#">
-										<i class="fa fa-google-plus-square" aria-hidden="true"></i>
-										Google+
-									</a>
-								</li>
-								<li class="rss">
-									<a href="#">
-										<i class="fa fa-rss-square" aria-hidden="true"></i>
-										RSS
 									</a>
 								</li>
 							</ul>
