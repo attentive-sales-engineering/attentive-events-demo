@@ -618,8 +618,7 @@
 	.section-featured-header.all-sports-events,
 	.section-event-single-featured-header,
 	.section-featured-header.order-tickets-without-seat,
-	.section-select-seat-featured-header,
-	.section-select-seat-2-featured-header{
+	.section-select-seat-featured-header,{
 		min-height:auto;
 	}
 	
@@ -913,8 +912,7 @@
 	.section-featured-header.all-sports-events .section-content,
 	.section-event-single-featured-header .section-content,
 	.section-featured-header.order-tickets-without-seat .section-content,
-	.section-select-seat-featured-header .section-content,
-	.section-select-seat-2-featured-header .section-content{
+	.section-select-seat-featured-header .section-content,{
 		padding:50px 0;
 	}
 	
@@ -926,8 +924,7 @@
 	
 	.section-featured-header.order-tickets-without-seat .section-content p strong,
 	.section-select-seat-featured-header .section-content p strong,
-	.section-select-seat-featured-header .section-content p strong span,
-	.section-select-seat-2-featured-header .section-content p strong{
+	.section-select-seat-featured-header .section-content p strong span,{
 		font-size:30px;
 		line-height:normal;
 	}

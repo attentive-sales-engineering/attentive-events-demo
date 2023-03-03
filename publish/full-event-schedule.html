@@ -99,7 +99,7 @@
 										<li><a href="artist-page.html">Concerts</a></li>
 										<li><a href="upcoming-events.html">Sports</a></li>
 										<li><a href="event-by-category.html">Theater</a></li>
-										<li><a href="select-seat-2.html">Tickets</a></li>
+										<li><a href="select-seat.html">Tickets</a></li>
 										<li class="cart"><a href="#">0</a></li>
 									</ul>
 								</div>
@@ -147,17 +147,14 @@
 							<label>Year</label>
 							<select class="selectpicker dropdown">
 								<option>Select Year</option>
-								<option value="2017">2023</option>
-								<option value="2017">2017</option>
-								<option value="2018">2018</option>
-								<option value="2019">2019</option>
-								<option value="2020">2020</option>
-								<option value="2021">2021</option>
-								<option value="2022">2022</option>
 								<option value="2023">2023</option>
 								<option value="2024">2024</option>
 								<option value="2025">2025</option>
 								<option value="2026">2026</option>
+								<option value="2027">2027</option>
+								<option value="2028">2028</option>
+								<option value="2029">2029</option>
+								<option value="2030">2030</option>
 							</select>
 						</div>
 						<div class="col-sm-6 col-md-2">
@@ -167,7 +164,7 @@
 				</div>
 			</div>
 		</section>
-	
+		<!-- Schedule Tabs -->
 		<section class="section-full-events-schedule">
 			<div class="container">
 				<div class="row">
@@ -175,76 +172,146 @@
 						<ul class="nav nav-tabs event-tabs" role="tablist">
 							<li role="presentation" class="active">
 								<a href="#tab1" role="tab" data-toggle="tab">
-									<strong>Saturday</strong>
-									22 
-									<span>August 2023</span>
+									<strong>
+										<script> document.write(new Date().toLocaleString('default', { weekday: 'long' })); </script>
+									</strong>
+									<script> document.write(new Date().getDate()).toLocaleDateString(); </script> 
+									<span>
+										<script> document.write(new Date().toLocaleString('default', { month: 'long' })); </script>
+										<script> document.write(new Date().getFullYear()).toLocaleDateString(); </script>
+									</span>
 								</a>
 							</li>
 							<li role="presentation">
 								<a href="#tab2" role="tab" data-toggle="tab">
-									<strong>Sunday</strong>
-									23 
-									<span>August 2023</span>
-								</a>
+									<strong>
+										<script> 
+											const tomorrow = new Date()
+											tomorrow.setDate(tomorrow.getDate() + 1)
+											document.write(tomorrow.toLocaleString('default', { weekday: 'long' }));
+										</script>
+									</strong>
+									<script> document.write(new Date().getDate()+1).toLocaleDateString(); </script>  
+									<span>
+										<script> document.write(new Date().toLocaleString('default', { month: 'long' })); </script>
+										<script> document.write(new Date().getFullYear()).toLocaleDateString(); </script>
+									</span>								</a>
 							</li>
 							<li role="presentation">
 								<a href="#tab3" role="tab" data-toggle="tab">
-									<strong>Monday</strong>
-									24 
-									<span>August 2023</span>
-								</a>
+									<strong>
+										<script> 
+											tomorrow.setDate(tomorrow.getDate() + 1)
+											document.write(tomorrow.toLocaleString('default', { weekday: 'long' }));
+										</script>
+									</strong>
+									<script> document.write(new Date().getDate()+2).toLocaleDateString(); </script>   
+									<span>
+										<script> document.write(new Date().toLocaleString('default', { month: 'long' })); </script>
+										<script> document.write(new Date().getFullYear()).toLocaleDateString(); </script>
+									</span>								</a>
 							</li>
 							<li role="presentation">
 								<a href="#tab4" role="tab" data-toggle="tab">
-									<strong>Tuesday</strong>
-									25 
-									<span>August 2023</span>
-								</a>
+									<strong>
+										<script> 
+											tomorrow.setDate(tomorrow.getDate() + 1)
+											document.write(tomorrow.toLocaleString('default', { weekday: 'long' }));
+										</script>
+									</strong>									
+									<script> document.write(new Date().getDate()+3).toLocaleDateString(); </script>  
+									<span>
+										<script> document.write(new Date().toLocaleString('default', { month: 'long' })); </script>
+										<script> document.write(new Date().getFullYear()).toLocaleDateString(); </script>
+									</span>								</a>
 							</li>
 							<li role="presentation">
 								<a href="#tab5" role="tab" data-toggle="tab">
-									<strong>Wednesday</strong>
-									26 
-									<span>August 2023</span>
-								</a>
+									<strong>
+										<script> 
+											tomorrow.setDate(tomorrow.getDate() + 1)
+											document.write(tomorrow.toLocaleString('default', { weekday: 'long' }));
+										</script>
+									</strong>									
+									<script> document.write(new Date().getDate()+4).toLocaleDateString(); </script>   
+									<span>
+										<script> document.write(new Date().toLocaleString('default', { month: 'long' })); </script>
+										<script> document.write(new Date().getFullYear()).toLocaleDateString(); </script>
+									</span>								</a>
 							</li>
 							<li role="presentation">
 								<a href="#tab6" role="tab" data-toggle="tab">
-									<strong>Thursday</strong>
-									27 
-									<span>August 2023</span>
-								</a>
+									<strong>
+										<script> 
+											tomorrow.setDate(tomorrow.getDate() + 1)
+											document.write(tomorrow.toLocaleString('default', { weekday: 'long' }));
+										</script>
+									</strong>									
+									<script> document.write(new Date().getDate()+5).toLocaleDateString(); </script>   
+									<span>
+										<script> document.write(new Date().toLocaleString('default', { month: 'long' })); </script>
+										<script> document.write(new Date().getFullYear()).toLocaleDateString(); </script>
+									</span>								</a>
 							</li>
 							<li role="presentation">
 								<a href="#tab7" role="tab" data-toggle="tab">
-									<strong>Friday</strong>
-									28 
-									<span>August 2023</span>
-								</a>
+									<strong>
+										<script> 
+											tomorrow.setDate(tomorrow.getDate() + 1)
+											document.write(tomorrow.toLocaleString('default', { weekday: 'long' }));
+										</script>
+									</strong>									
+									<script> document.write(new Date().getDate()+6).toLocaleDateString(); </script>   
+									<span>
+										<script> document.write(new Date().toLocaleString('default', { month: 'long' })); </script>
+										<script> document.write(new Date().getFullYear()).toLocaleDateString(); </script>
+									</span>								</a>
 							</li>
 							<li role="presentation">
 								<a href="#tab8" role="tab" data-toggle="tab">
-									<strong>Saturday</strong>
-									29 
-									<span>August 2023</span>
-								</a>
+									<strong>
+										<script> 
+											tomorrow.setDate(tomorrow.getDate() + 1)
+											document.write(tomorrow.toLocaleString('default', { weekday: 'long' }));
+										</script>
+									</strong>									
+									<script> document.write(new Date().getDate()+7).toLocaleDateString(); </script>   
+									<span>
+										<script> document.write(new Date().toLocaleString('default', { month: 'long' })); </script>
+										<script> document.write(new Date().getFullYear()).toLocaleDateString(); </script>
+									</span>								</a>
 							</li>
 							<li role="presentation">
 								<a href="#tab9" role="tab" data-toggle="tab">
-									<strong>Sunday</strong>
-									30 
-									<span>August 2023</span>
-								</a>
+									<strong>
+										<script> 
+											tomorrow.setDate(tomorrow.getDate() + 1)
+											document.write(tomorrow.toLocaleString('default', { weekday: 'long' }));
+										</script>
+									</strong>									
+									<script> document.write(new Date().getDate()+8).toLocaleDateString(); </script>   
+									<span>
+										<script> document.write(new Date().toLocaleString('default', { month: 'long' })); </script>
+										<script> document.write(new Date().getFullYear()).toLocaleDateString(); </script>
+									</span>								</a>
 							</li>
 							<li role="presentation">
 								<a href="#tab10" role="tab" data-toggle="tab">
-									<strong>Monday</strong>
-									31 
-									<span>August 2023</span>
-								</a>
+									<strong>
+										<script> 
+											tomorrow.setDate(tomorrow.getDate() + 1)
+											document.write(tomorrow.toLocaleString('default', { weekday: 'long' }));
+										</script>
+									</strong>									
+									<script> document.write(new Date().getDate()+9).toLocaleDateString(); </script>  
+									<span>
+										<script> document.write(new Date().toLocaleString('default', { month: 'long' })); </script>
+										<script> document.write(new Date().getFullYear()).toLocaleDateString(); </script>
+									</span>								</a>
 							</li>
 						</ul>
 					</div>
+					<!-- Section Content -->
 					<div class="section-content">
 						<div class="tab-content">
 						    <div role="tabpanel" class="tab-pane active" id="tab1">
@@ -254,7 +321,7 @@
 											<li class="active">
 												<a href="#tab1-hr1" aria-controls="tab1-hr1" role="tab" data-toggle="tab">
 													<span class="schedule-time">08:00 <strong>AM</strong></span>
-													<span class="schedule-title">Kiai Kanjeng Orchestra</span>
+													<span class="schedule-title">Lincoln Center Orchestra</span>
 													<span class="schedule-ticket-info">18 tickets left</span>
 												</a>
 											</li>
@@ -294,15 +361,19 @@
 												<img src="images/full-event-schedule-img.jpg" alt="image">
 												<div class="full-event-info">
 													<div class="full-event-info-header">
-														<h2>Kiai Kanjeng Orchestra</h2>
+														<h2>Lincoln Center Orchestra</h2>
 														<span class="ticket-left-info">18 Tickets Left</span>
 														<div class="clearfix"></div>
-														<span class="event-date-info">Saturday, August 22 2023 | 08:00 AM</span>
-														<span class="event-venue-info">220 Morrissey Blvd. Boston, MA 02125</span>
+														<span class="event-date-info">
+															<script> 
+																document.write(new Date().toDateString()); 
+																</script> | 08:00 AM
+														</span>
+														<span class="event-venue-info">150 W 65th, New York, NY 10023</span>
 													</div>
 													<div class="full-event-info-content">
 														<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
-														<a class="book-ticket" href="#">Book Ticket</a>
+														<a class="book-ticket" href="select-seat.html">Book Ticket</a>
 													</div>
 												</div>
 											</div>
@@ -313,8 +384,12 @@
 														<h2>Attentive Author Meetup in Boston</h2>
 														<span class="ticket-left-info">20 Tickets Left</span>
 														<div class="clearfix"></div>
-														<span class="event-date-info">Saturday, August 22 2023 | 09:00 AM</span>
-														<span class="event-venue-info">220 Morrissey Blvd. Boston, MA 02125</span>
+														<span class="event-date-info">
+															<script> 
+																document.write(new Date().toDateString()); 
+															</script> | 08:00 AM
+														</span>
+														<span class="event-venue-info">150 W 65th, New York, NY 10023</span>
 													</div>
 													<div class="full-event-info-content">
 														<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
@@ -329,8 +404,11 @@
 														<h2>Attentive Open Championship</h2>
 														<span class="ticket-left-info">9 Tickets Left</span>
 														<div class="clearfix"></div>
-														<span class="event-date-info">Saturday, August 22 2023 | 10:00 AM</span>
-														<span class="event-venue-info">220 Morrissey Blvd. Boston, MA 02125</span>
+														<span class="event-date-info">
+															<script> 
+																document.write(new Date().toDateString()); 
+															</script> | 10:00 AM</span>
+														<span class="event-venue-info">150 W 65th, New York, NY 10023</span>
 													</div>
 													<div class="full-event-info-content">
 														<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
@@ -345,8 +423,10 @@
 														<h2>UEFA CHAMPIONS LEAGUE</h2>
 														<span class="ticket-left-info">13 Tickets Left</span>
 														<div class="clearfix"></div>
-														<span class="event-date-info">Saturday, August 22 2023 | 09:00 PM</span>
-														<span class="event-venue-info">220 Morrissey Blvd. Boston, MA 02125</span>
+														<span class="event-date-info"><script> 
+																document.write(new Date().toDateString()); 
+															</script> | 09:00 PM</span>
+														<span class="event-venue-info">150 W 65th, New York, NY 10023</span>
 													</div>
 													<div class="full-event-info-content">
 														<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
@@ -361,8 +441,11 @@
 														<h2>FORMULA 1 SEPANG</h2>
 														<span class="ticket-left-info">13 Tickets Left</span>
 														<div class="clearfix"></div>
-														<span class="event-date-info">Saturday, August 22 2023 | 10:00 PM</span>
-														<span class="event-venue-info">220 Morrissey Blvd. Boston, MA 02125</span>
+														<span class="event-date-info">
+															<script> 
+																document.write(new Date().toDateString()); 
+															</script> | 10:00 PM</span>
+														<span class="event-venue-info">150 W 65th, New York, NY 10023</span>
 													</div>
 													<div class="full-event-info-content">
 														<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
@@ -381,7 +464,7 @@
 											<li class="active">
 												<a href="#tab2-hr1" aria-controls="tab2-hr1" role="tab" data-toggle="tab">
 													<span class="schedule-time">08:00 <strong>AM</strong></span>
-													<span class="schedule-title">Kiai Kanjeng Orchestra</span>
+													<span class="schedule-title">Lincoln Center Orchestra</span>
 													<span class="schedule-ticket-info">18 tickets left</span>
 												</a>
 											</li>
@@ -407,11 +490,16 @@
 												<img src="images/full-event-schedule-img.jpg" alt="image">
 												<div class="full-event-info">
 													<div class="full-event-info-header">
-														<h2>Kiai Kanjeng Orchestra</h2>
+														<h2>Lincoln Center Orchestra</h2>
 														<span class="ticket-left-info">18 Tickets Left</span>
 														<div class="clearfix"></div>
-														<span class="event-date-info">Sunday, August 23 2023 | 08:00 AM</span>
-														<span class="event-venue-info">220 Morrissey Blvd. Boston, MA 02125</span>
+														<span class="event-date-info">
+															<script> 
+																const tomorrow2 = new Date()
+																tomorrow2.setDate(tomorrow2.getDate() + 1)
+																document.write(tomorrow2.toDateString()); 
+															</script> | 08:00 AM</span>
+														<span class="event-venue-info">150 W 65th, New York, NY 10023</span>
 													</div>
 													<div class="full-event-info-content">
 														<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
@@ -426,8 +514,11 @@
 														<h2>Attentive Author Meetup in Boston</h2>
 														<span class="ticket-left-info">20 Tickets Left</span>
 														<div class="clearfix"></div>
-														<span class="event-date-info">Sunday, August 23 2023 | 09:00 AM</span>
-														<span class="event-venue-info">220 Morrissey Blvd. Boston, MA 02125</span>
+														<span class="event-date-info">
+															<script> 
+																document.write(tomorrow2.toDateString()); 
+															</script> | 09:00 AM</span>
+														<span class="event-venue-info">150 W 65th, New York, NY 10023</span>
 													</div>
 													<div class="full-event-info-content">
 														<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
@@ -442,8 +533,11 @@
 														<h2>Attentive Open Championship</h2>
 														<span class="ticket-left-info">9 Tickets Left</span>
 														<div class="clearfix"></div>
-														<span class="event-date-info">Sunday, August 23 2023 | 10:00 AM</span>
-														<span class="event-venue-info">220 Morrissey Blvd. Boston, MA 02125</span>
+														<span class="event-date-info">
+															<script> 
+																document.write(tomorrow2.toDateString()); 
+															</script> | 10:00 AM</span>
+														<span class="event-venue-info">150 W 65th, New York, NY 10023</span>
 													</div>
 													<div class="full-event-info-content">
 														<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
@@ -462,7 +556,7 @@
 											<li class="active">
 												<a href="#tab3-hr1" aria-controls="tab3-hr1" role="tab" data-toggle="tab">
 													<span class="schedule-time">08:00 <strong>AM</strong></span>
-													<span class="schedule-title">Kiai Kanjeng Orchestra</span>
+													<span class="schedule-title">Lincoln Center Orchestra</span>
 													<span class="schedule-ticket-info">18 tickets left</span>
 												</a>
 											</li>
@@ -488,11 +582,15 @@
 												<img src="images/full-event-schedule-img.jpg" alt="image">
 												<div class="full-event-info">
 													<div class="full-event-info-header">
-														<h2>Kiai Kanjeng Orchestra</h2>
+														<h2>Lincoln Center Orchestra</h2>
 														<span class="ticket-left-info">18 Tickets Left</span>
 														<div class="clearfix"></div>
-														<span class="event-date-info">Monday, August 24 2023 | 08:00 AM</span>
-														<span class="event-venue-info">220 Morrissey Blvd. Boston, MA 02125</span>
+														<span class="event-date-info">
+															<script> 
+																tomorrow2.setDate(tomorrow2.getDate()+1)
+																document.write(tomorrow2.toDateString()); 
+															</script> | 08:00 AM</span>
+														<span class="event-venue-info">150 W 65th, New York, NY 10023</span>
 													</div>
 													<div class="full-event-info-content">
 														<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
@@ -507,8 +605,11 @@
 														<h2>Attentive Author Meetup in Boston</h2>
 														<span class="ticket-left-info">20 Tickets Left</span>
 														<div class="clearfix"></div>
-														<span class="event-date-info">Monday, August 24 2023 | 09:00 AM</span>
-														<span class="event-venue-info">220 Morrissey Blvd. Boston, MA 02125</span>
+														<span class="event-date-info">
+															<script> 
+																document.write(tomorrow2.toDateString()); 
+															</script> | 09:00 AM</span>
+														<span class="event-venue-info">150 W 65th, New York, NY 10023</span>
 													</div>
 													<div class="full-event-info-content">
 														<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
@@ -523,8 +624,11 @@
 														<h2>Attentive Open Championship</h2>
 														<span class="ticket-left-info">9 Tickets Left</span>
 														<div class="clearfix"></div>
-														<span class="event-date-info">Monday, August 24 2023 | 10:00 AM</span>
-														<span class="event-venue-info">220 Morrissey Blvd. Boston, MA 02125</span>
+														<span class="event-date-info">
+															<script> 
+																document.write(tomorrow2.toDateString()); 
+															</script> | 10:00 AM</span>
+														<span class="event-venue-info">150 W 65th, New York, NY 10023</span>
 													</div>
 													<div class="full-event-info-content">
 														<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
@@ -543,7 +647,7 @@
 											<li class="active">
 												<a href="#tab4-hr1" aria-controls="tab4-hr1" role="tab" data-toggle="tab">
 													<span class="schedule-time">08:00 <strong>AM</strong></span>
-													<span class="schedule-title">Kiai Kanjeng Orchestra</span>
+													<span class="schedule-title">Lincoln Center Orchestra</span>
 													<span class="schedule-ticket-info">18 tickets left</span>
 												</a>
 											</li>
@@ -562,11 +666,15 @@
 												<img src="images/full-event-schedule-img.jpg" alt="image">
 												<div class="full-event-info">
 													<div class="full-event-info-header">
-														<h2>Kiai Kanjeng Orchestra</h2>
+														<h2>Lincoln Center Orchestra</h2>
 														<span class="ticket-left-info">18 Tickets Left</span>
 														<div class="clearfix"></div>
-														<span class="event-date-info">Tuesday, August 25 2023 | 08:00 AM</span>
-														<span class="event-venue-info">220 Morrissey Blvd. Boston, MA 02125</span>
+														<span class="event-date-info">
+															<script> 
+																tomorrow2.setDate(tomorrow2.getDate()+1)
+																document.write(tomorrow2.toDateString()); 
+															</script> | 08:00 AM</span>
+														<span class="event-venue-info">150 W 65th, New York, NY 10023</span>
 													</div>
 													<div class="full-event-info-content">
 														<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
@@ -581,8 +689,11 @@
 														<h2>Attentive Author Meetup in Boston</h2>
 														<span class="ticket-left-info">20 Tickets Left</span>
 														<div class="clearfix"></div>
-														<span class="event-date-info">Tuesday, August 25 2023 | 09:00 AM</span>
-														<span class="event-venue-info">220 Morrissey Blvd. Boston, MA 02125</span>
+														<span class="event-date-info">
+															<script> 
+																document.write(tomorrow2.toDateString()); 
+															</script> | 09:00 AM</span>
+														<span class="event-venue-info">150 W 65th, New York, NY 10023</span>
 													</div>
 													<div class="full-event-info-content">
 														<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
@@ -601,7 +712,7 @@
 											<li class="active">
 												<a href="#tab5-hr1" aria-controls="tab5-hr1" role="tab" data-toggle="tab">
 													<span class="schedule-time">08:00 <strong>AM</strong></span>
-													<span class="schedule-title">Kiai Kanjeng Orchestra</span>
+													<span class="schedule-title">Lincoln Center Orchestra</span>
 													<span class="schedule-ticket-info">18 tickets left</span>
 												</a>
 											</li>
@@ -620,11 +731,15 @@
 												<img src="images/full-event-schedule-img.jpg" alt="image">
 												<div class="full-event-info">
 													<div class="full-event-info-header">
-														<h2>Kiai Kanjeng Orchestra</h2>
+														<h2>Lincoln Center Orchestra</h2>
 														<span class="ticket-left-info">18 Tickets Left</span>
 														<div class="clearfix"></div>
-														<span class="event-date-info">Wednesday, August 26 2023 | 08:00 AM</span>
-														<span class="event-venue-info">220 Morrissey Blvd. Boston, MA 02125</span>
+														<span class="event-date-info">
+															<script> 
+																tomorrow2.setDate(tomorrow2.getDate()+1)
+																document.write(tomorrow2.toDateString()); 
+															</script> | 08:00 AM</span>
+														<span class="event-venue-info">150 W 65th, New York, NY 10023</span>
 													</div>
 													<div class="full-event-info-content">
 														<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
@@ -639,8 +754,11 @@
 														<h2>Attentive Author Meetup in Boston</h2>
 														<span class="ticket-left-info">20 Tickets Left</span>
 														<div class="clearfix"></div>
-														<span class="event-date-info">Wednesday, August 26 2023 | 09:00 AM</span>
-														<span class="event-venue-info">220 Morrissey Blvd. Boston, MA 02125</span>
+														<span class="event-date-info">
+															<script> 
+																document.write(tomorrow2.toDateString()); 
+															</script> | 09:00 AM</span>
+														<span class="event-venue-info">150 W 65th, New York, NY 10023</span>
 													</div>
 													<div class="full-event-info-content">
 														<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
@@ -659,7 +777,7 @@
 											<li class="active">
 												<a href="#tab6-hr1" aria-controls="tab6-hr1" role="tab" data-toggle="tab">
 													<span class="schedule-time">08:00 <strong>AM</strong></span>
-													<span class="schedule-title">Kiai Kanjeng Orchestra</span>
+													<span class="schedule-title">Lincoln Center Orchestra</span>
 													<span class="schedule-ticket-info">18 tickets left</span>
 												</a>
 											</li>
@@ -678,11 +796,15 @@
 												<img src="images/full-event-schedule-img.jpg" alt="image">
 												<div class="full-event-info">
 													<div class="full-event-info-header">
-														<h2>Kiai Kanjeng Orchestra</h2>
+														<h2>Lincoln Center Orchestra</h2>
 														<span class="ticket-left-info">18 Tickets Left</span>
 														<div class="clearfix"></div>
-														<span class="event-date-info">Thursday, August 27 2023 | 08:00 AM</span>
-														<span class="event-venue-info">220 Morrissey Blvd. Boston, MA 02125</span>
+														<span class="event-date-info">
+															<script> 
+																tomorrow2.setDate(tomorrow2.getDate()+1)
+																document.write(tomorrow2.toDateString()); 
+															</script> | 08:00 AM</span>
+														<span class="event-venue-info">150 W 65th, New York, NY 10023</span>
 													</div>
 													<div class="full-event-info-content">
 														<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
@@ -697,8 +819,11 @@
 														<h2>Attentive Author Meetup in Boston</h2>
 														<span class="ticket-left-info">20 Tickets Left</span>
 														<div class="clearfix"></div>
-														<span class="event-date-info">Thursday, August 27 2023 | 09:00 AM</span>
-														<span class="event-venue-info">220 Morrissey Blvd. Boston, MA 02125</span>
+														<span class="event-date-info">
+															<script> 
+																document.write(tomorrow2.toDateString()); 
+															</script> | 09:00 AM</span>
+														<span class="event-venue-info">150 W 65th, New York, NY 10023</span>
 													</div>
 													<div class="full-event-info-content">
 														<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
@@ -717,7 +842,7 @@
 											<li class="active">
 												<a href="#tab7-hr1" aria-controls="tab7-hr1" role="tab" data-toggle="tab">
 													<span class="schedule-time">08:00 <strong>AM</strong></span>
-													<span class="schedule-title">Kiai Kanjeng Orchestra</span>
+													<span class="schedule-title">Lincoln Center Orchestra</span>
 													<span class="schedule-ticket-info">18 tickets left</span>
 												</a>
 											</li>
@@ -736,11 +861,15 @@
 												<img src="images/full-event-schedule-img.jpg" alt="image">
 												<div class="full-event-info">
 													<div class="full-event-info-header">
-														<h2>Kiai Kanjeng Orchestra</h2>
+														<h2>Lincoln Center Orchestra</h2>
 														<span class="ticket-left-info">18 Tickets Left</span>
 														<div class="clearfix"></div>
-														<span class="event-date-info">Friday, August 28 2023 | 08:00 AM</span>
-														<span class="event-venue-info">220 Morrissey Blvd. Boston, MA 02125</span>
+														<span class="event-date-info">
+															<script> 
+																tomorrow2.setDate(tomorrow2.getDate()+1)
+																document.write(tomorrow2.toDateString()); 
+															</script> | 08:00 AM</span>
+														<span class="event-venue-info">150 W 65th, New York, NY 10023</span>
 													</div>
 													<div class="full-event-info-content">
 														<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
@@ -755,8 +884,11 @@
 														<h2>Attentive Author Meetup in Boston</h2>
 														<span class="ticket-left-info">20 Tickets Left</span>
 														<div class="clearfix"></div>
-														<span class="event-date-info">Friday, August 28 2023 | 09:00 AM</span>
-														<span class="event-venue-info">220 Morrissey Blvd. Boston, MA 02125</span>
+														<span class="event-date-info">
+															<script> 
+																document.write(tomorrow2.toDateString()); 
+															</script> | 09:00 AM</span>
+														<span class="event-venue-info">150 W 65th, New York, NY 10023</span>
 													</div>
 													<div class="full-event-info-content">
 														<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
@@ -775,7 +907,7 @@
 											<li class="active">
 												<a href="#tab8-hr1" aria-controls="tab8-hr1" role="tab" data-toggle="tab">
 													<span class="schedule-time">08:00 <strong>AM</strong></span>
-													<span class="schedule-title">Kiai Kanjeng Orchestra</span>
+													<span class="schedule-title">Lincoln Center Orchestra</span>
 													<span class="schedule-ticket-info">18 tickets left</span>
 												</a>
 											</li>
@@ -794,11 +926,15 @@
 												<img src="images/full-event-schedule-img.jpg" alt="image">
 												<div class="full-event-info">
 													<div class="full-event-info-header">
-														<h2>Kiai Kanjeng Orchestra</h2>
+														<h2>Lincoln Center Orchestra</h2>
 														<span class="ticket-left-info">18 Tickets Left</span>
 														<div class="clearfix"></div>
-														<span class="event-date-info">Saturday, August 29 2023 | 08:00 AM</span>
-														<span class="event-venue-info">220 Morrissey Blvd. Boston, MA 02125</span>
+														<span class="event-date-info">
+															<script> 
+																tomorrow2.setDate(tomorrow2.getDate()+1)
+																document.write(tomorrow2.toDateString()); 
+															</script> | 08:00 AM</span>
+														<span class="event-venue-info">150 W 65th, New York, NY 10023</span>
 													</div>
 													<div class="full-event-info-content">
 														<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
@@ -813,8 +949,11 @@
 														<h2>Attentive Author Meetup in Boston</h2>
 														<span class="ticket-left-info">20 Tickets Left</span>
 														<div class="clearfix"></div>
-														<span class="event-date-info">Saturday, August 29 2023 | 09:00 AM</span>
-														<span class="event-venue-info">220 Morrissey Blvd. Boston, MA 02125</span>
+														<span class="event-date-info">
+															<script> 
+																document.write(tomorrow2.toDateString()); 
+															</script> | 09:00 AM</span>
+														<span class="event-venue-info">150 W 65th, New York, NY 10023</span>
 													</div>
 													<div class="full-event-info-content">
 														<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
@@ -833,7 +972,7 @@
 											<li class="active">
 												<a href="#tab9-hr1" aria-controls="tab9-hr1" role="tab" data-toggle="tab">
 													<span class="schedule-time">08:00 <strong>AM</strong></span>
-													<span class="schedule-title">Kiai Kanjeng Orchestra</span>
+													<span class="schedule-title">Lincoln Center Orchestra</span>
 													<span class="schedule-ticket-info">18 tickets left</span>
 												</a>
 											</li>
@@ -852,11 +991,15 @@
 												<img src="images/full-event-schedule-img.jpg" alt="image">
 												<div class="full-event-info">
 													<div class="full-event-info-header">
-														<h2>Kiai Kanjeng Orchestra</h2>
+														<h2>Lincoln Center Orchestra</h2>
 														<span class="ticket-left-info">18 Tickets Left</span>
 														<div class="clearfix"></div>
-														<span class="event-date-info">Sunday, August 30 2023 | 08:00 AM</span>
-														<span class="event-venue-info">220 Morrissey Blvd. Boston, MA 02125</span>
+														<span class="event-date-info">
+															<script> 
+																tomorrow2.setDate(tomorrow2.getDate()+1)
+																document.write(tomorrow2.toDateString()); 
+															</script> | 08:00 AM</span>
+														<span class="event-venue-info">150 W 65th, New York, NY 10023</span>
 													</div>
 													<div class="full-event-info-content">
 														<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
@@ -871,8 +1014,11 @@
 														<h2>Attentive Author Meetup in Boston</h2>
 														<span class="ticket-left-info">20 Tickets Left</span>
 														<div class="clearfix"></div>
-														<span class="event-date-info">Sunday, August 30 2023 | 09:00 AM</span>
-														<span class="event-venue-info">220 Morrissey Blvd. Boston, MA 02125</span>
+														<span class="event-date-info">
+															<script> 
+																document.write(tomorrow2.toDateString()); 
+															</script> | 09:00 AM</span>
+														<span class="event-venue-info">150 W 65th, New York, NY 10023</span>
 													</div>
 													<div class="full-event-info-content">
 														<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
@@ -891,7 +1037,7 @@
 											<li class="active">
 												<a href="#tab10-hr1" aria-controls="tab10-hr1" role="tab" data-toggle="tab">
 													<span class="schedule-time">08:00 <strong>AM</strong></span>
-													<span class="schedule-title">Kiai Kanjeng Orchestra</span>
+													<span class="schedule-title">Lincoln Center Orchestra</span>
 													<span class="schedule-ticket-info">18 tickets left</span>
 												</a>
 											</li>
@@ -910,11 +1056,15 @@
 												<img src="images/full-event-schedule-img.jpg" alt="image">
 												<div class="full-event-info">
 													<div class="full-event-info-header">
-														<h2>Kiai Kanjeng Orchestra</h2>
+														<h2>Lincoln Center Orchestra</h2>
 														<span class="ticket-left-info">18 Tickets Left</span>
 														<div class="clearfix"></div>
-														<span class="event-date-info">Monday, August 31 2023 | 08:00 AM</span>
-														<span class="event-venue-info">220 Morrissey Blvd. Boston, MA 02125</span>
+														<span class="event-date-info">
+															<script> 
+																tomorrow2.setDate(tomorrow2.getDate()+1)
+																document.write(tomorrow2.toDateString()); 
+															</script> | 08:00 AM</span>
+														<span class="event-venue-info">150 W 65th, New York, NY 10023</span>
 													</div>
 													<div class="full-event-info-content">
 														<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
@@ -929,8 +1079,11 @@
 														<h2>Attentive Author Meetup in Boston</h2>
 														<span class="ticket-left-info">20 Tickets Left</span>
 														<div class="clearfix"></div>
-														<span class="event-date-info">Monday, August 31 2023 | 09:00 AM</span>
-														<span class="event-venue-info">220 Morrissey Blvd. Boston, MA 02125</span>
+														<span class="event-date-info">
+															<script> 
+																document.write(tomorrow2.toDateString()); 
+															</script> | 09:00 AM</span>
+														<span class="event-venue-info">150 W 65th, New York, NY 10023</span>
 													</div>
 													<div class="full-event-info-content">
 														<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
