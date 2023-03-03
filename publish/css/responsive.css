@@ -526,7 +526,7 @@
 		margin:0;
 	}
 	
-	.section-newsletter .section-content .newsletter-form input[type="email"]{
+	.section-newsletter .section-content .newsletter-form input[type="tel"]{
 		width:80%;
 		margin:0 0 30px
 	}
@@ -872,7 +872,7 @@
 	}
 	
 	.hero-1 .hero-content .hero-search input[type="text"],
-	.section-newsletter .section-content .newsletter-form input[type="email"],
+	.section-newsletter .section-content .newsletter-form input[type="tel"],
 	.section-newsletter .section-content .newsletter-form input[type="submit"]{
 		width:100%;
 	}

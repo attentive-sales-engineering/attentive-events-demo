@@ -97,7 +97,7 @@
 
 input[type="checkbox"]:checked + label::before,
 input[type="radio"]:checked + label::before {
-  background-color: #ff6600;
+  background-color: #F9D100;
   border-color: #6f6f6f;
 }
 

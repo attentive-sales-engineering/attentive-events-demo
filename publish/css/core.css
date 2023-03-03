@@ -783,6 +783,7 @@ img.aligncenter {
 
 .widget input[type="text"],
 .widget input[type="email"],
+.widget input[type="tel"],
 .widget input[type="url"],
 .widget input[type="password"],
 .widget input[type="search"],
@@ -1407,13 +1408,13 @@ h1.page-title{  text-transform: uppercase; font-size:20pt;}
   clear: both;
   margin-bottom: 10px;
 }
-.footer-wrapper .foooter-container .footer-middle .contact-footer .contact-phone-email {
+.footer-wrapper .foooter-container .footer-middle .contact-footer .contact-phone-tel {
   clear: both;
 }
-.footer-wrapper .foooter-container .footer-middle .contact-footer .contact-phone-email .contact-email {
+.footer-wrapper .foooter-container .footer-middle .contact-footer .contact-phone-tel .contact-tel {
   margin-left: 30px;
 }
-.footer-wrapper .foooter-container .footer-middle .contact-footer .contact-phone-email .contact-email a {
+.footer-wrapper .foooter-container .footer-middle .contact-footer .contact-phone-tel .contact-tel a {
   color: #757575;
   -moz-transition: all 0.3s ease-in-out 0s;
   -webkit-transition: all 0.3s ease-in-out 0s;
@@ -1421,7 +1422,7 @@ h1.page-title{  text-transform: uppercase; font-size:20pt;}
   -o-transition: all 0.3s ease-in-out 0s;
   transition: all 0.3s ease-in-out 0s;
 }
-.footer-wrapper .foooter-container .footer-middle .contact-footer .contact-phone-email .contact-email a:hover {
+.footer-wrapper .foooter-container .footer-middle .contact-footer .contact-phone-tel .contact-tel a:hover {
   -moz-transition: all 0.3s ease-in-out 0s;
   -webkit-transition: all 0.3s ease-in-out 0s;
   -ms-transition: all 0.3s ease-in-out 0s;
@@ -2986,6 +2987,10 @@ iframe {
   margin-top: 33px;
 }
 .content-wrapper .contactForm .form-list .form-email {
+  line-height: 55px;
+  margin-top: 8px;
+}
+.content-wrapper .contactForm .form-list .form-tel {
   line-height: 55px;
   margin-top: 8px;
 }
