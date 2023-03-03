@@ -94,11 +94,10 @@ $(document).ready(function () {
     if (childrenElement) childrenElement.value = children
   }
 
-  // Clicked submit button
-  $('button[type="submit"').click(function () {
-    if (
-      window.location.pathname.match('order-review')
-    ) {
+  // Clicked primary link button
+  $('.primary-link').click(function () {
+    console.log('CLICKED SUBMIT')
+    if (window.location.pathname.match('order-review')) {
       console.log('SET LOCAL STORAGE')
       localStorage.setItem('city', cityElement.value)
       localStorage.setItem('checkIn', checkInElement.value)
