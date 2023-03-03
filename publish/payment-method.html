@@ -73,7 +73,7 @@
 				<div class="container">
 					<div class="row">
 						<div class="site-branding col-md-3">
-							<h1 class="site-title"><a href="#home" title="myticket" rel="home"><img src="images/logo.png" alt="logo"></a></h1>
+							<h1 class="site-title"><a href="homepage.html" title="myticket" rel="home"><img src="images/logo.png" alt="logo"></a></h1>
 						</div>
 
 						<div class="col-md-9">
@@ -142,9 +142,26 @@
 								<div role="tabpanel" class="tab-pane active" id="credit-card">
 									<form>
 										<div class="row">
-											<div class="col-sm-12">
-												<label>Name on Card</label>
+											<div class="col-sm-6">
+												<label>First Name</label>
 												<input type="text" class="form-control">
+											</div>
+											<div class="col-sm-6">
+												<label>Last Name</label>
+												<input type="text" class="form-control">
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-sm-12">
+												<label>Email Address</label>
+												<input type="text" class="form-control">
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-sm-12">
+												<label>Phone Number</label>
+												<input id = "phone" type="text" class="form-control"
+												placeholder="10-digit Phone Number (e.g. +1-987-654-3210)" required>
 											</div>
 										</div>
 										<div class="row">
@@ -181,6 +198,8 @@
 												<label>Year</label>
 												<select class="selectpicker dropdown">
 													<option>Select Year</option>
+													<option value="2032">2032</option>
+													<option value="2031">2031</option>
 													<option value="2030">2030</option>
 													<option value="2029">2029</option>
 													<option value="2028">2028</option>
@@ -189,13 +208,24 @@
 													<option value="2025">2025</option>
 													<option value="2024">2024</option>
 													<option value="2023">2023</option>
-													<option value="2022">2022</option>
-													<option value="2021">2021</option>
-													<option value="2020">2020</option>
-													<option value="2019">2019</option>
-													<option value="2018">2018</option>
-													<option value="2017">2017</option>
 												</select>
+											</div>
+											<div class="col-sm-12">
+												<div class="row">
+														<p>  
+															<!-- Extra Space-->
+														</p>
+												</div>
+											</div>
+											<div class="col-12 offset-md-2">
+												<form>
+													<div class="form-check">
+														<input class="form-check-input" type="checkbox" value="yes"
+															id="sms_opt_in">
+														<label class="form-check-label" for="sms_opt_in">Opt In for
+															SMS Marketing & Transactional Alerts*</label>
+													</div>
+												</form>
 											</div>
 										</div>
 									</form>
