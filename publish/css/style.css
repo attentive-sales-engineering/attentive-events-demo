@@ -220,42 +220,45 @@
 	  z-index:9999;
   }
   
+
   .header-1 #site-navigation .cart a{
-	  background-color: #F9D100; 
-	  background-size:25px 23px!important;
-	  border:1px solid #F9D100;
-  }
+	background-color: #F9D100; 
+	background-size:25px 23px!important;
+	border:1px solid #F9D100;
+}
   
-  .header-1 #site-navigation .cart i.fa-opencart{
+.header-1 #site-navigation .cart i.fa-opencart{
+
+	position: absolute;
+	z-index: 2;
+	margin: 14px 0 0 46px;
+	color:#fff;
+	font-size:20px;
+}
+
   
-	  position: absolute;
-	  z-index: 2;
-	  margin: 14px 0 0 46px;
-	  color:#fff;
-	  font-size:20px;
-  }
-  
-  .mobile-cart{
-	  position:absolute;
-	  right:60px;
-	  bottom:0;
-	  display:none;
-  }
-  
-  .mobile-cart a{	
-	  font-size:15px;
-	  line-height:20px;
-	  text-transform:uppercase;
-	  color:#fff;
-	  border:1px solid #F9D100;
-	  border-radius:20px;
-	  margin:6px 0;
-	  padding:7px 20px!important;
-	  font-family: "Montserrat-Light";
-	  width:90px;
-	  position:relative;
-	  display:block;
-  }
+.mobile-cart{
+	position:absolute;
+	right:60px;
+	bottom:0;
+	display:none;
+}
+
+.mobile-cart a{	
+	font-size:15px;
+	line-height:20px;
+	text-transform:uppercase;
+	color:#fff;
+	border:1px solid #F9D100;
+	border-radius:20px;
+	margin:6px 0;
+	padding:7px 20px!important;
+	font-family: "Montserrat-Light";
+	width:90px;
+	position:relative;
+	display:block;
+}
+
   
   .mobile-cart a:before{
 	  display:block;
@@ -310,28 +313,27 @@
   #site-navigation .cart{
 	  margin:0 0 0 20px;
   }
-  
+
   #site-navigation .cart a{
-	  border:1px solid #F9D100;
-	  border-radius:20px;
-	  margin:6px 0;
-	  padding:7px 20px!important;
-	  font-family: "Montserrat-Light";
-	  width:90px;
-	  background-size:25px 23px!important;
-	  position:relative;
-  }
-  
-  #site-navigation .cart a:before{
-	  display:block;
-	  content: "\f23d";
-	  font-family: 'FontAwesome';
-	  position:absolute;
-	  top:7px;
-	  right:20px;
-	  font-size:18px
-  }
-  
+	border:1px solid #F9D100;
+	border-radius:20px;
+	margin:6px 0;
+	padding:7px 20px!important;
+	font-family: "Montserrat-Light";
+	width:90px;
+	background-size:25px 23px!important;
+	position:relative;
+}
+
+#site-navigation .cart a:before{
+	display:block;
+	content: "\f23d";
+	font-family: 'FontAwesome';
+	position:absolute;
+	top:7px;
+	right:20px;
+	font-size:18px
+}
   .closecanvas{
 	  display:none;
   }
@@ -715,12 +717,12 @@
 	  margin:0 0 35px;
   }
   
-  .section-todays-schedule .section-header h2{
+  .section-todays-schedule .section-header h2 {
 	  font-size:22px;
 	  line-height:22px;
 	  color:#F9D100;
 	  text-transform:uppercase;
-	  font-family: font-family: 'Open Sans', sans-serif;
+	  font-family:'Open Sans', sans-serif;
 	  position:relative;
 	  padding:0 0 0 25px;
 	  display:inline-block;
@@ -880,165 +882,6 @@
 	  font-family: 'Open Sans', sans-serif;
   }
   
-  /*--------------------------------------------------------------
-	  Section Upcoming Events
-  ------------------------------------------------------------- */
-  
-  .section-upcoming-events{
-	  padding:70px 0 35px;
-	  background:#fff
-  }
-  
-  .section-upcoming-events .section-header{
-	  overflow:hidden;
-	  margin:0 0 40px;
-	  padding:0 0 0 25px;
-  }
-  
-  .section-upcoming-events .section-header h2{
-	  font-size:22px;
-	  line-height:22px;
-	  color:#373737;
-	  text-transform:uppercase;
-	  font-family: font-family: 'Open Sans', sans-serif;
-	  display:block;
-	  margin:0 0 25px;
-	  font-weight:700;
-	  position:relative;
-  }
-  
-  .section-upcoming-events .section-header h2:before{
-	  display:block;
-	  width:5px;
-	  height:16px;
-	  content: "";
-	  position:absolute;
-	  left:-25px;
-	  top:4px;
-	  background:#F9D100;
-  }
-  
-  .section-upcoming-events .section-header p{
-	  color:#6f6f6f;
-	  font-size:13px;
-	  font-family: "Montserrat-Light";
-	  line-height:22px;
-	  padding:0 2px;
-	  float:left;
-	  width:70%;
-  }
-  
-  .section-upcoming-events .section-header a{
-	  color:#F9D100;
-	  border:1px solid #F9D100;
-	  background:#fff;
-	  display:inline-block;
-	  text-decoration:none;
-	  float:right;
-	  font-size:12px;
-	  font-family: "Montserrat-Light";
-	  padding:13px 25px;
-	  border-radius:20px;
-	  text-transform:uppercase;
-	  font-weight:300;
-  }
-  
-  .section-upcoming-events .section-header a:hover{
-	  background:#F9D100;
-	  color:#fff
-  }
-  
-  .section-upcoming-events .section-content ul li{
-	  width:33.333333%;
-	  float:left;
-	  position:relative;
-  }
-  
-  .section-upcoming-events .section-content .date{
-	  padding:15px;
-	  background:rgba(36,36,36, 0.8);
-	  position:absolute;
-	  top:0;
-	  left:20px;
-	  text-align:center;
-	  text-transform:uppercase;
-	  color:#fff;
-  }
-  
-  .section-upcoming-events .section-content .date a{
-	  color:#fff
-  }
-  
-  .section-upcoming-events .section-content .date .day{
-	  font-size:30px;
-	  display:block;
-	  font-family: "Montserrat-Regular";
-	  margin:0 0 5px;
-  }
-  
-  .section-upcoming-events .section-content .date .month{
-	  font-size:10px;
-	  display:block;
-	  font-family: "Montserrat-Light";
-	  margin:0 0 5px;
-  }
-  
-  .section-upcoming-events .section-content .date .year{
-	  font-size:10px;
-	  display:block;
-	  font-family: "Montserrat-Light";
-  }
-  
-  .section-upcoming-events .section-content .info{
-	  padding:50px 20px 25px;
-	  position:absolute;
-	  bottom:0;
-	  left:0;
-	  right:0;
-	  background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(253,253,253,0) 1%, rgba(28,28,28,1) 100%); 
-	  background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(253,253,253,0) 1%,rgba(28,28,28,1) 100%);
-	  background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(253,253,253,0) 1%,rgba(28,28,28,1) 100%);
-	  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#1c1c1c',GradientType=0 )
-	  
-  }
-  
-  .section-upcoming-events .section-content .info p{
-	  font-size:16px;
-	  font-family: "Montserrat-Regular";
-	  color:#fff;
-	  width:65%;
-	  float:left;
-	  margin:0;
-  }
-  
-  .section-upcoming-events .section-content .info p span{
-	  display:block;
-	  color:#b3b3b3;
-	  font-size:11px;
-	  font-family: "Montserrat-Light";
-  }
-  
-  .section-upcoming-events .section-content .info .get-ticket{
-	  font-size: 12px;
-	  line-height: 12px;
-	  color:#fff;
-	  padding:10px 15px;
-	  background:#F9D100;
-	  text-transform:uppercase;
-	  font-family: 'Open Sans', sans-serif;
-	  border:none;
-	  border-radius:20px;
-	  font-weight:700;
-	  display:inline-block;
-	  width:30%;
-	  float:right;
-	  text-align:center
-  }
-  
-  .section-upcoming-events .section-content .info .get-ticket:hover{
-	  background:#fff;
-	  color:#F9D100;
-  }
   
   /*--------------------------------------------------------------
 	  Section Calendar Events
@@ -1247,7 +1090,7 @@
 	  line-height:22px;
 	  color:#373737;
 	  text-transform:uppercase;
-	  font-family: font-family: 'Open Sans', sans-serif;
+	  font-family: 'Open Sans', sans-serif;
 	  padding:0 0 0 25px;
 	  display:block;
 	  margin:0 0 35px;
@@ -1352,19 +1195,19 @@
   }
   
   .section-event-category .section-content ul li.category-6 a{
-	  background: rgb(219,10,91,.9); 
-	  background: -moz-linear-gradient(left,  rgba(219,10,91,.9) 0%, rgba(210,82,127,.9) 100%); 
-	  background: -webkit-linear-gradient(left,  rgba(219,10,91,.9) 0%,rgba(210,82,127,.9) 100%); 
-	  background: linear-gradient(to right,  rgba(219,10,91,.9) 0%,rgba(210,82,127,.9) 100%); 
-	  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#db0a5b', endColorstr='#d2527f',GradientType=.9 ); 
+	  background: rgba(255, 102, 0, .9);
+	  background: -moz-linear-gradient(left,  rgba(255, 102, 0, .9) 0%, rgba(255, 102, 0, .9) 100%); 
+	  background: -webkit-linear-gradient(left,  rgba(255, 102, 0, .9) 0%,rgba(255, 102, 0, .9) 100%); 
+	  background: linear-gradient(to right,  rgba(255, 102, 0, .9) 0%,rgba(255, 102, 0, .9) 100%); 
+	  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#F9D100', endColorstr='#F9D100',GradientType=.9 ); 
   }
   
   .section-event-category .section-content ul li.category-6:hover a{
 	  background: rgb(219,10,91,.5); 
-	  background: -moz-linear-gradient(left,  rgba(219,10,91,.5) 0%, rgba(210,82,127,.5) 100%); 
-	  background: -webkit-linear-gradient(left,  rgba(219,10,91,.5) 0%,rgba(210,82,127,.5) 100%); 
-	  background: linear-gradient(to right,  rgba(219,10,91,.5) 0%,rgba(210,82,127,.5) 100%); 
-	  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#db0a5b', endColorstr='#d2527f',GradientType=.5 ); 
+	  background: -moz-linear-gradient(left,  rgba(255, 102, 0, .9) 0%, rgba(255, 102, 0, .9) 100%); 
+	  background: -webkit-linear-gradient(left,  rgba(255, 102, 0, .9) 0%,rgba(255, 102, 0, .9) 100%); 
+	  background: linear-gradient(to right,  rgba(255, 102, 0, .9) 0%,rgba(255, 102, 0, .9) 100%); 
+	  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#F9D100', endColorstr='#F9D100',GradientType=.5 ); 
   }
   
   .section-event-category .section-content ul li a{
@@ -1408,7 +1251,7 @@
 	  line-height:22px;
 	  color:#373737;
 	  text-transform:uppercase;
-	  font-family: font-family: 'Open Sans', sans-serif;
+	  font-family: 'Open Sans', sans-serif;
 	  position:relative;
 	  padding:0 0 0 25px;
 	  display:block;
@@ -1600,7 +1443,7 @@
 	  line-height:22px;
 	  color:#373737;
 	  text-transform:uppercase;
-	  font-family: font-family: 'Open Sans', sans-serif;
+	  font-family: 'Open Sans', sans-serif;
 	  position:relative;
 	  padding:0 0 0 25px;
 	  display:block;
@@ -1889,7 +1732,7 @@
   
   .section-newsletter{
 	  padding:90px 0;
-	  background:url(../images/newsletter.jpg) no-repeat center center;
+	  background:url(../images/footer_event_banner.jpg) no-repeat center center;
 	  -webkit-background-size: cover;
 	  -moz-background-size: cover;
 	  -o-background-size: cover;
@@ -3616,7 +3459,7 @@
   
   .section-select-payment-method .scrtabs-tab-container,
   .section-select-payment-method .scrtabs-tabs-fixed-container{
-	  height:117px;!important
+	  height:117px;
   }
   
   .section-select-payment-method .tab-content{
@@ -3751,7 +3594,7 @@
 	  margin: 0;
   }
   
-  .section-artist-page-header {
+  .section-concerts-header {
 	  background: #fafafa none repeat scroll 0 0;
 	  border-bottom: 1px solid #cecece;
 	  border-top: 1px solid #cecece;
@@ -3760,7 +3603,7 @@
   }
   
   
-  .section-artist-page-header .entry-title {
+  .section-concerts-header .entry-title {
 	  border: medium none;
 	  color: #b3b3b3;
 	  font-size: 28px;
@@ -4424,7 +4267,7 @@
 	  content: "";
 	  width:5px;
 	  height:16px;
-	  background:#ff5700;
+	  background:#F9D100;
 	  position:absolute;
 	  left:-25px;
 	  top:3px;
@@ -4752,7 +4595,7 @@
   .section-full-events-schedule .section-content .tab-pane .full-event-info .ticket-left-info{
 	  font-size:10px;
 	  color:#fff;
-	  background:#ff5700;
+	  background:#F9D100;
 	  padding:5px 15px;
 	  float:right;
 	  display:inline-block;
