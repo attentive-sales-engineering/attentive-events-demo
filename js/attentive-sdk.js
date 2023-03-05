@@ -14,7 +14,7 @@ $(document).ready(function () {
   // console.log('get email:', email)
   const emailElement = document.querySelector('#email')
 
-  let phone = localStorage.getItem('phone') || '+12065551212'
+  let phone = localStorage.getItem('phone') || '+1-206-555-1212'
   // console.log('get phone:', phone)
   const phoneElement = document.querySelector('#phone')
 
@@ -81,17 +81,12 @@ $(document).ready(function () {
     })
   }
 
-  if (window.location.pathname.match('booking')) {
-    console.log('BOOKING PAGE -> GET LOCAL STORAGE & SET FORM VALUES')
+  if (window.location.pathname.match('payment-method')) {
+    console.log('PAYMENT METHOD PAGE -> GET LOCAL STORAGE & SET FORM VALUES')
     if (firstNameElement) firstNameElement.value = firstName
     if (lastNameElement) lastNameElement.value = lastName
     if (emailElement) emailElement.value = email
     if (phoneElement) phoneElement.value = phone
-    if (cityElement) cityElement.value = city
-    if (checkInElement) checkInElement.value = checkIn
-    if (checkOutElement) checkOutElement.value = checkOut
-    if (adultsElement) adultsElement.value = adults
-    if (childrenElement) childrenElement.value = children
   }
 
   // Clicked primary link button
@@ -99,11 +94,6 @@ $(document).ready(function () {
     console.log('CLICKED SUBMIT')
     if (window.location.pathname.match('order-review')) {
       console.log('SET LOCAL STORAGE')
-      localStorage.setItem('city', cityElement.value)
-      localStorage.setItem('checkIn', checkInElement.value)
-      localStorage.setItem('checkOut', checkOutElement.value)
-      localStorage.setItem('adults', adultsElement.value)
-      localStorage.setItem('children', childrenElement.value)
       // ADD TO CART SDK
       console.log('PLACE ORDER BUTTON -> ADD TO CART SDK')
       window.attentive.analytics.addToCart({

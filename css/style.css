@@ -3348,7 +3348,7 @@
   }
   
   .section-select-payment-method .tab-content  input[type="text"]{
-	  color:#c2c2c2;
+	  color:#000000;
 	  font-size:15px;
 	  margin:0 0 20px;
 	  padding:10px 25px;
@@ -3358,18 +3358,18 @@
   }
   
   .section-select-payment-method .tab-content input[type="text"]::-webkit-input-placeholder{
-	  color: #c2c2c2;
+	  color: #000000;
   }
   .section-select-payment-method .tab-content input[type="text"]::-moz-placeholder{
-	  color: #c2c2c2;
+	  color: #000000;
   }
   
   .section-select-payment-method .tab-content input[type="text"]:-ms-input-placeholder{
-	  color: #c2c2c2;
+	  color: #000000;
   }
   
   .section-select-payment-method .tab-content input[type="text"]:-moz-placeholder{ 
-	  color: #c2c2c2;
+	  color: #000000;
   }
   
   
